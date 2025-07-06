@@ -1,0 +1,32 @@
+[[plugin.deps]]
+use = "wylie102/duckdb"
+rev = "3f8c863"
+hash = "87b9233a74325e95011670ed20bbd0d4"
+
+[[plugin.deps]]
+use = "ahkohd/eza-preview"
+rev = "7a93433"
+hash = "22e1bd3dd03894746a3540b5f3729d0c"
+
+[[plugin.deps]]
+use = "ndtoan96/ouch"
+rev = "10b4627"
+hash = "3ec6a973d506665f1570a9fe08343fd8"
+
+[[plugin.deps]]
+use = "AnirudhG07/rich-preview"
+rev = "843c3fa"
+hash = "b4040931f0d2f9670ddb4923e55cd881"
+
+[[plugin.deps]]
+use = "yazi-rs/plugins:full-border"
+rev = "63f9650"
+hash = "3996fc74044bc44144b323686f887e1"
+
+[[plugin.deps]]
+use = "Rolv-Apneseth/starship"
+rev = "6a0f3f7"
+hash = "d5a74d95c2e8194ac352c5e10e81e64f"
+
+[flavor]
+deps = []
