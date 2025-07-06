@@ -33,7 +33,7 @@ alias zs='zoxide query -s'                        # 按分数排序
 # 3. functions ~
 # ================================================================================================
 # 交互式目录选择器，替代默认zi
-function cdi() {
+function zdi() {
     local preview_cmd="eza --color=always -F=always --group-directories-first --icons=always -l -h --git --git-repos --time-style=\"+%Y-%m-%d %H:%M\" --no-user --no-permissions"
 
     # 使用fzf交互选择
@@ -55,9 +55,9 @@ function cdi() {
   }
 
 # 智能cd,交互目录选择
-function cdi() {
+function cd() {
     if [ $# -eq 0 ]; then
-        zi  # 无参数时调用zi
+        zdi  # 无参数时调用zi
     elif [ -d "$1" ]; then
 	builtin cd "$1"
     else

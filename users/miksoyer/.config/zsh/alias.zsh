@@ -21,4 +21,6 @@ alias gonix='cd /etc/nix-darwin'
 
 # 重建nix-darwin配置
 alias rebuild='sudo darwin-rebuild switch --impure --show-trace --flake /etc/nix-darwin#HUAWEI-MateBook-Fold'
+# 更新nix-darwin配置并重建
+alias uprebuild='nix flake update --commit-lock-file && rebuild'
 

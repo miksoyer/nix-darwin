@@ -22,7 +22,7 @@ return {
    colors = colors,
 
    -- background
-   -- background = backdrops:initial_options(false), -- set to true if you want wezterm to start on focus mode
+   background = backdrops:initial_options(true), -- set to true if you want wezterm to start on focus mode
 
    -- scrollbar
    enable_scroll_bar = true,
@@ -38,8 +38,8 @@ return {
    },
 
    -- window
-   window_background_opacity = 0.3,
-   macos_window_background_blur = 20,
+   window_background_opacity = 0.7,
+   macos_window_background_blur = 25,
    window_decorations = "INTEGRATED_BUTTONS|RESIZE",
    integrated_title_button_alignment = "Right",
    integrated_title_button_color = "Auto",
