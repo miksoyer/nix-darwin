@@ -122,11 +122,12 @@ alt-1 = 'workspace 1'
 alt-2 = 'workspace 2'
 alt-3 = 'workspace 3'
 alt-4 = 'workspace 4'
-alt-e = 'workspace Enjoy'  # just so so
-alt-t = 'workspace Term'   # for Terminal
-alt-b = 'workspace Browse' # for browser
-alt-v = 'workspace VSCode' # for vscode
-alt-w = 'workspace Work'   # for IDE, (code)
+alt-e = 'workspace Enjoy'   # just so so
+alt-c = 'workspace Chat'    # qq, wechat, etc
+alt-t = 'workspace Term'    # for Terminal
+alt-b = 'workspace Browse'  # for browser
+alt-v = 'workspace VSCode'  # for vscode
+alt-w = 'workspace Work'    # for IDE, (code)
 
 
 # See: https://nikitabobko.github.io/AeroSpace/commands#move-node-to-workspace
@@ -140,8 +141,12 @@ alt-shift-b = [
     'move-node-to-workspace Browse',
     'workspace Browse',
 ] # for browser
-alt-shift-v = ['move-node-to-workspace VSCode', 'workspace VSCode'] # for vscode
 alt-shift-c = [
+    'move-node-to-workspace Chat',
+    'workspace Chat',
+] # qq, wechat, etc
+alt-shift-v = ['move-node-to-workspace VSCode', 'workspace VSCode'] # for vscode
+alt-shift-w = [
     'move-node-to-workspace Work',
     'workspace Work',
 ] # for IDE, (code)
