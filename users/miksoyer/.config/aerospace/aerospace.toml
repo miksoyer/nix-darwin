@@ -5,11 +5,7 @@ start-at-login = true
 after-login-command = []
 
 # You can use it to add commands that run after AeroSpace startup.
-after-startup-command = [
-    # require to brew install borders(tap)
-    'exec-and-forget borders style=round active_color=0xff38bdf8 inactive_color=0xffbfdbfe width=6.0 hidpi=on',
-    # background_color=0xffc4b5fd
-]
+after-startup-command = ['borders', 'sketchybar' ]
 
 # // TODO
 
@@ -196,3 +192,40 @@ t = ['exec-and-forget wezterm', 'layout floating tiling']
 v = 'exec-and-forget code'
 c = 'exec-and-forget clion'
 b = 'exec-and-forget google-chrome'
+
+exec-on-workspace-change = []
+
+[[on-window-detected]]
+run = ["layout floating"]
+
+[on-window-detected.if]
+app-id = "com.apple.finder"
+
+[[on-window-detected]]
+check-further-callbacks = false
+run = ["layout floating", "move-node-to-workspace 4"]
+
+[on-window-detected.if]
+app-id = "WezTerm.App"
+app-name-regex-substring = "WezTerm"
+app-name-regex-substring = "wezterm"
+
+[[on-window-detected]]
+run = ["layout floating"]
+
+[on-window-detected.if]
+app-id = "org.wezfurlong.WezTerm"
+
+[[on-window-detected]]
+run = ["layout floating"]
+
+[on-window-detected.if]
+app-id = "com.tencent.xinWeChat"
+
+[[on-window-detected]]
+run = ["layout floating"]
+
+[on-window-detected.if]
+app-id = "com.tencent.qq"
+
+[workspace-to-monitor-force-assignment]

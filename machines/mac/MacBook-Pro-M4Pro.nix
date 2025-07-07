@@ -20,10 +20,6 @@
       ./../../configuration/darwin/gui/dock.nix
       ./../../configuration/darwin/gui/finder.nix
 
-      ./../../configuration/darwin/service/aerospace.nix
-      ./../../configuration/darwin/service/sketchybar.nix
-      ./../../configuration/darwin/service/jankyborders.nix
-
       ./../../configuration/darwin/pkgs/homebrew.nix
       ./../../configuration/darwin/system/hook.nix
 
