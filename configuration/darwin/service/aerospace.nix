@@ -40,6 +40,10 @@
       # Commands to run every time a new window is detected with optional conditions.
       on-window-detected = [
         {
+          "if".app-id = "com.apple.finder";
+          run = ["layout floating"];
+        }
+        {
           check-further-callbacks = false;            # Whether to check further callbacks after this rule (optional).
           "if" = {
             app-id = "WezTerm.App";              # The application ID to match (optional).
