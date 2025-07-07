@@ -11,6 +11,7 @@ alias rm='rm -i'                    # 交互式删除
 alias mkdir='mkdir -p'              # 自动创建父目录
 
 
+
 # 快速操作
 alias cl='clear && ls'              # 清屏并列出文件
 alias cr='clear'

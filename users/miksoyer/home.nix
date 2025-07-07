@@ -11,10 +11,9 @@ in
   # You can update Home Manager without changing this value.
   # See the Home Manager release notes for a list of state version changes in each release.
   home.stateVersion = "25.05";
-  #home.username = "${myname}"; # must should be equal with your delcare in flake.nix
-  #home.homeDirectory = "/Users/miksoyer";
+  home.username = "${myname}"; # must should be equal with your delcare in flake.nix
+  home.homeDirectory = "/Users/${myname}";
 
-  #home-manager.users.jdoe = ./home.nix;
 
   home.packages = [
     # language server
@@ -59,7 +58,7 @@ in
     pkgs.wechat
     pkgs.discord
     pkgs.ollama
-    pkgs.qemu
+    # pkgs.qemu
     # pkgs.istat-menus # $96
   ];
 
@@ -93,10 +92,10 @@ in
       source = "/etc/nix-darwin/users/${myname}/.config/helix/";
       recursive = true;
     };
-    ".config/aerospace" = {
-      source = "/etc/nix-darwin/users/${myname}/.config/aerospace/";
-      recursive = true;
-    };
+    # ".config/aerospace" = {
+    #   source = "/etc/nix-darwin/users/${myname}/.config/aerospace/";
+    #   recursive = true;
+    # };
   };
 
   # Let Home Manager install and manage itself.

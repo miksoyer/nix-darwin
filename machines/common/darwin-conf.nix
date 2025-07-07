@@ -93,7 +93,6 @@ in
       enableFzfGit = true;
       enableFzfHistory = true;
       enableGlobalCompInit = true;
-      # enableSyntaxHighlighting = true;
       variables = {
           # like export xxx = xxx;
       };

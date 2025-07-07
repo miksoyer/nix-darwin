@@ -9,7 +9,8 @@
       pkgs.google-chrome
       pkgs.iina
       pkgs.flameshot
-      pkgs.aerospace
+      
+      pkgs.sketchybar
 
       # CLI tools
       pkgs.neovim

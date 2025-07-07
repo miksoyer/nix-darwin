@@ -71,7 +71,7 @@ in
               "homebrew/homebrew-core" = homebrew-core;
               "homebrew/homebrew-cask" = homebrew-cask;
               "homebrew/homebrew-bundle" = homebrew-bundle;
-              "felixKratz/homebrew-formulae" = formulae ;
+              #"felixKratz/homebrew-formulae" = formulae ;
             };
             # Optional: Enable fully-declarative tap management
             #

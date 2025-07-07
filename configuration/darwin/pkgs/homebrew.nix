@@ -5,11 +5,12 @@
     enable = true;
     
     brews = [
-      "borders"   # FelixKratz/formulae taps
+      # "sketchybar"
+      # "borders"
     ];
     taps = [
-      #"FelixKratz/formulae" #sketchybar
-      { name = "FelixKratz/formulae"; }
+      #"FelixKratz/formulae" #sketchybar borders
+      # { name = "FelixKratz/formulae"; }
     ];
 
     # always upgrade casks listed in homebrew.casks regardless of whether it’s unversioned or it updates itself.
