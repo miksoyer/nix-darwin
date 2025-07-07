@@ -41,17 +41,29 @@
       on-window-detected = [
         {
           check-further-callbacks = false;            # Whether to check further callbacks after this rule (optional).
-          if = {
-            app-id = "Another.Cool.App";              # The application ID to match (optional).
-            app-name-regex-substring = "CoolApp";     # Regex substring to match the app name (optional).
-            during-aerospace-startup = false;         # Whether to match during aerospace startup (optional).
-            window-title-regex-substring = "Title";   # Substring to match in the window title (optional).
-            workspace = "cool-workspace";             # The workspace name to match (optional).
+          "if" = {
+            app-id = "WezTerm.App";              # The application ID to match (optional).
+            app-name-regex-substring = "WezTerm";     # Regex substring to match the app name (optional).
+            #during-aerospace-startup = false;         # Whether to match during aerospace startup (optional).
+            #window-title-regex-substring = "Title";   # Substring to match in the window title (optional).
+            #workspace = "cool-workspace";             # The workspace name to match (optional).
           };
           run = [                                 # Commands to execute when the conditions match (required).
-            "move-node-to-workspace m"
-            "resize-node"
+            "layout floating"
+            "move-node-to-workspace 4"
           ];
+        }
+        {
+          "if".app-id = "org.wezfurlong.WezTerm";
+          run = ["layout floating"];
+        }
+        {
+          "if".app-id = "com.tencent.xinWeChat";
+          run = ["layout floating"];
+        }
+        {
+          "if".app-id = "com.tencent.qq";
+          run = ["layout floating"];
         }
       ];
 

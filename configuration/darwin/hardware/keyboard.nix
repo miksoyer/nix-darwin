@@ -13,5 +13,11 @@
 
   # Chooses what happens when you press the Fn key on the keyboard. A restart is required for this setting to take effect.
   # null or one of “Do Nothing”, “Change Input Source”, “Show Emoji & Symbols”, “Start Dictation”
-  system.defaults.hitoolbox.AppleFnUsageType = null;     
+  system.defaults.hitoolbox.AppleFnUsageType = null;   
+
+
+  system.defaults.NSGlobalDomain = {
+    InitialKeyRepeat = 15;                                # This sets how long you must hold down the key before it starts repeating.
+    KeyRepeat = 3;                                        # This sets how fast it repeats once it starts.
+  };
 }

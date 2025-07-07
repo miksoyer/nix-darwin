@@ -10,4 +10,13 @@
     TrackpadThreeFingerDrag = true;     # Whether to enable three finger drag.
     TrackpadThreeFingerTapGesture = 0;  # 0 to disable three finger tap, 2 to trigger Look up & data detectors. The default is 2.
   };
+
+
+  system.defaults.NSGlobalDomain = {
+    "com.apple.swipescrolldirection" = true;            # Whether to enable “Natural” scrolling direction. 
+    "com.apple.trackpad.enableSecondaryClick" = true;   # trackpad secondary click
+    "com.apple.trackpad.forceClick" = true;
+    "com.apple.trackpad.scaling" = 2.0;                 # Configures the trackpad tracking speed (0 to 3).
+    NSWindowShouldDragOnGesture = true;                   # Enable moving window by holding anywhere on it like on Linux.
+  };
 }

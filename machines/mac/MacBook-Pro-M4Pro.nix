@@ -22,7 +22,7 @@
 
       ./../../configuration/darwin/service/aerospace.nix
       ./../../configuration/darwin/service/sketchybar.nix
-      ./../../configuration/darwin/service/borders.nix
+      ./../../configuration/darwin/service/jankyborders.nix
 
       ./../../configuration/darwin/pkgs/homebrew.nix
       ./../../configuration/darwin/system/hook.nix

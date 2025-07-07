@@ -16,8 +16,8 @@
     
     order = "above";      # Specifies whether borders should be drawn above or below windows.
     style = "round";      # Specifies the style of the border (either round or square).
-    blur_radius = 5.0;    # blur radius applied to the borders or backgrounds with transparency.
-    width = 6.0;          # Determines the width of the border
+    blur_radius = 12.0;    # blur radius applied to the borders or backgrounds with transparency.
+    width = 5.0;          # Determines the width of the border
     hidpi = true;           # If set to on, the border will be drawn with retina resolution.
 
     # If set to true, the (slower) accessibility API is used to resolve the focused window.
@@ -31,8 +31,8 @@
       "kitty"
     ];
 
-    whitelist = [
-      "Arc"
-    ];
+    # whitelist = [
+    #   "Arc"
+    # ];
   };
 }
