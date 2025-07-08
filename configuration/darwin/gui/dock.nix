@@ -5,6 +5,7 @@
       "/System/Applications/Launchpad.app"
       "/System/Applications/System Settings.app"
       "/System/Applications/App Store.app"
+      "/System/Applications/Mail.app"
       "/Applications/QQMusic.app"
       "/Users/miksoyer/Applications/Home Manager Apps/WeChat.app"
       "/Users/miksoyer/Applications/Home Manager Apps/QQ.app"

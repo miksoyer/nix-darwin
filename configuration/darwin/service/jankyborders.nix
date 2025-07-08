@@ -16,7 +16,7 @@
     order = "above";      # Specifies whether borders should be drawn above or below windows.
     style = "round";      # Specifies the style of the border (either round or square).
     blur_radius = 5.0;    # blur radius applied to the borders or backgrounds with transparency.
-    width = 3.0;          # Determines the width of the border
+    width = 2.5;          # Determines the width of the border
     hidpi = true;           # If set to on, the border will be drawn with retina resolution.
 
     # If set to true, the (slower) accessibility API is used to resolve the focused window.

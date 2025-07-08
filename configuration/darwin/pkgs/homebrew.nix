@@ -8,7 +8,6 @@
       # "sketchybar"
       # "borders"
       # "font-sf-pro"
-      # "sf-symbols"
     ];
     taps = [
       #"FelixKratz/formulae" #sketchybar borders
@@ -22,6 +21,8 @@
       "qqmusic"
       "raycast"
       "tencent-meeting"
+      "font-sf-pro"
+      "sf-symbols"
     ];
     masApps = {
       # "Amphetamine" = 937984704;

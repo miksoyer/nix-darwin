@@ -1,25 +1,39 @@
 #!/bin/bash
 
-# Color Palette
-export BLACK=0xff181926
-export WHITE=0xffcad3f5
-export RED=0xffed8796
-export GREEN=0xffa6da95
-export BLUE=0xff8aadf4
-export YELLOW=0xffeed49f
-export ORANGE=0xfff5a97f
-export MAGENTA=0xffc6a0f6
-export GREY=0xff939ab7
-export TRANSPARENT=0x00000000
+export TRANSPARENT=0x00ffffff
 
-# General bar colors
-export BAR_COLOR=0xa024273a
-export ICON_COLOR=$WHITE # Color of all icons
-export LABEL_COLOR=$WHITE # Color of all labels
-export BACKGROUND_1=0x903c3e4f
-export BACKGROUND_2=0x90494d64
+# -- Gray Scheme --
+export ITEM_COLOR=0xff000000
+export ACCENT_COLOR=0xffc3c6cb
 
-export POPUP_BACKGROUND_COLOR=0xff24273a
-export POPUP_BORDER_COLOR=$WHITE
+# -- White Scheme --
+# export ITEM_COLOR=0xff000000
+# export ACCENT_COLOR=0xffffffff
 
-export SHADOW_COLOR=$BLACK
+# -- Teal Scheme --
+# export ITEM_COLOR=0xff000000
+# export ACCENT_COLOR=0xff2cf9ed
+
+# -- Purple Scheme --
+# export ITEM_COLOR=0xff000000
+# export ACCENT_COLOR=0xffeb46f9
+
+# -- Red Scheme ---
+# export ITEM_COLOR=0xff000000
+# export ACCENT_COLOR=0xffff2453
+
+# -- Blue Scheme ---
+# export ITEM_COLOR=0xff000000
+# export ACCENT_COLOR=0xff15bdf9
+
+# -- Green Scheme --
+# export ITEM_COLOR=0xff000000
+# export ACCENT_COLOR=0xff1dfca1
+
+# -- Orange Scheme --
+# export ITEM_COLOR=0xffffffff
+# export ACCENT_COLOR=0xfff97716
+
+# -- Yellow Scheme --
+# export ITEM_COLOR=0xff000000
+# export ACCENT_COLOR=0xfff7fc17
