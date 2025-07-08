@@ -10,10 +10,6 @@
       pkgs.iina
       pkgs.flameshot
       
-      pkgs.aerospace
-      pkgs.sketchybar
-      pkgs.jankyborders
-      pkgs.skhd
 
 
       # CLI tools

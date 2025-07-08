@@ -72,11 +72,10 @@ in
     ".config/wezterm" = { source = "/etc/nix-darwin/users/${myname}/.config/wezterm/"; recursive = true; };
     ".config/yazi" = { source = "/etc/nix-darwin/users/${myname}/.config/yazi/"; recursive = true; };
     ".config/helix" = { source = "/etc/nix-darwin/users/${myname}/.config/helix/"; recursive = true; };
-    ".config/aerospace" = { source = "/etc/nix-darwin/users/${myname}/.config/aerospace/"; recursive = true; };
-    ".config/borders" = { source = "/etc/nix-darwin/users/${myname}/.config/borders/"; recursive = true; };
     ".config/sketchybar" = { source = "/etc/nix-darwin/users/${myname}/.config/sketchybar/"; recursive = true; };
   };
 
   # Let Home Manager install and manage itself.
   programs.home-manager.enable = true;
+
 }

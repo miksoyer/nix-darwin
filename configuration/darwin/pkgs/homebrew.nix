@@ -7,6 +7,8 @@
     brews = [
       # "sketchybar"
       # "borders"
+      # "font-sf-pro"
+      # "sf-symbols"
     ];
     taps = [
       #"FelixKratz/formulae" #sketchybar borders
