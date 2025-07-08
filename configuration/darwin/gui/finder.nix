@@ -1,5 +1,8 @@
 { ... }:
 {
+  # Sets the size of the finder sidebar icons: 1 (small), 2 (medium) or 3 (large). The default is 3.
+  system.defaults.NSGlobalDomain.NSTableViewDefaultSizeMode = 3;
+
   system.defaults.finder = {
     AppleShowAllExtensions = true;          # Whether to always show file extensions
     AppleShowAllFiles = false;              # Whether to always show hidden files

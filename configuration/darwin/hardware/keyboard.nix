@@ -19,7 +19,17 @@
   system.defaults.NSGlobalDomain = {
     InitialKeyRepeat = 15;                                # This sets how long you must hold down the key before it starts repeating.
     KeyRepeat = 3;                                        # This sets how fast it repeats once it starts.
+    # Whether to enable automatic capitalization.
+    NSAutomaticCapitalizationEnabled = false;
+    # Whether to enable smart dash substitution
+    NSAutomaticDashSubstitutionEnabled = false;
+    # Whether to enable inline predictive text. 
+    NSAutomaticInlinePredictionEnabled = false;
     # Whether to enable smart period substitution.
     NSAutomaticPeriodSubstitutionEnabled = false;
+    # Whether to enable smart quote substitution.
+    NSAutomaticQuoteSubstitutionEnabled = false;
+    # Whether to enable automatic spelling correction. 
+    NSAutomaticSpellingCorrectionEnabled = false;
   };
 }

@@ -17,7 +17,7 @@
     "com.apple.trackpad.enableSecondaryClick" = true;   # trackpad secondary click
     "com.apple.trackpad.forceClick" = true;
     "com.apple.trackpad.scaling" = 2.0;                 # Configures the trackpad tracking speed (0 to 3).
-    NSWindowShouldDragOnGesture = true;                   # Enable moving window by holding anywhere on it like on Linux.
+    NSWindowShouldDragOnGesture = true;                 # Enable moving window by holding anywhere on it like on Linux.
     # Enables swiping left or right with two fingers to navigate backward or forward.
     AppleEnableMouseSwipeNavigateWithScrolls = true;
     # Enables swiping left or right with two fingers to navigate backward or forward. 

@@ -26,6 +26,9 @@
         # Whether to automatically switch between light and dark mode
         AppleInterfaceStyleSwitchesAutomatically = true;
 
+        # Whether to save new documents to iCloud by default. 
+        NSDocumentSaveNewDocumentsToCloud = false;
+
         AppleScrollerPagingBehavior = true;                   # Jump to the spot that’s clicked on the scroll bar
         AppleShowAllExtensions = true;                        # Whether to show all file extensions in Finder
         AppleShowScrollBars = "Always";                       # When to show the scrollbars.(Automatic)
@@ -36,7 +39,7 @@
         NSNavPanelExpandedStateForSaveMode2 = true;
         PMPrintingExpandedStateForPrint = true;               # Whether to use the expanded print panel by default
         PMPrintingExpandedStateForPrint2 = true;
-        NSDocumentSaveNewDocumentsToCloud = false;            # Whether to save new documents to iCloud by default. 
+        
         "com.apple.mouse.tapBehavior" = 1;                    
         
       };
