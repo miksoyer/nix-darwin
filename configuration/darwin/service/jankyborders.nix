@@ -27,7 +27,7 @@
     # background_color = "0xffc4b5fd";
 
     blacklist = [
-      "kitty"
+      "iPhone Mirroring"
     ];
   };
 }

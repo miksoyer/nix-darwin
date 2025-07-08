@@ -30,6 +30,7 @@
       pkgs.eza
       pkgs.tlrc
       pkgs.jq
+      pkgs.yq-go
       pkgs.wget
       pkgs.ffmpeg
       pkgs.poppler
@@ -39,7 +40,7 @@
 
 
       # stable
-      # nixpkgs_stable.legacyPackages.${structure}.aerospace
+      #nixpkgs_stable.legacyPackages.${structure}.ghostty
     ];
 
   };

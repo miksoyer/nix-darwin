@@ -22,7 +22,7 @@
       automatically-unhide-macos-hidden-apps = true;
 
       
-      after-startup-command = [];           # Add commands that run after AeroSpace startup
+      after-startup-command = [ "exec-and-forget sketchybar" ];           # Add commands that run after AeroSpace startup
       accordion-padding = 50;               # Padding between windows in an accordion container.
 
       # Commands to run every time workspace changes.
@@ -39,8 +39,7 @@
 
       # Commands to run every time a new window is detected with optional conditions.
       on-window-detected = [
-        {
-          #check-further-callbacks = false;            # Whether to check further callbacks after this rule (optional).
+        { #check-further-callbacks = false;            # Whether to check further callbacks after this rule (optional).
           "if" = {
             app-id = "com.apple.finder";              # The application ID to match (optional).
             # app-name-regex-substring = "CoolApp";     # Regex substring to match the app name (optional).
@@ -48,19 +47,44 @@
             # window-title-regex-substring = "Title";   # Substring to match in the window title (optional).
             # workspace = "cool-workspace";             # The workspace name to match (optional).
           };
-          run = ["resize-node" "move-node-to-workspace 4"];
+          run = [ "layout floating" "move-node-to-workspace 4" ]; 
         }
-        {
-          "if".app-id = "org.wezfurlong.WezTerm";
-          run = ["layout floating"];
+        { 
+          "if".app-id = "com.google.Chrome";
+          run = [ "move-node-to-workspace 2" ]; 
+          }
+        { 
+          "if".app-id = "com.github.wez.wezterm";
+          run = [ "layout floating" "move-node-to-workspace T" ]; 
         }
-        {
+        { 
+          "if".app-id = "com.microsoft.VSCode";
+          run = [ "layout floating" "move-node-to-workspace V" ]; 
+        }
+        { 
           "if".app-id = "com.tencent.xinWeChat";
-          run = ["layout floating"];
+          run = [ "layout floating" "move-node-to-workspace E" ]; 
         }
-        {
+        { 
           "if".app-id = "com.tencent.qq";
-          run = ["layout floating"];
+          run = [ "layout floating" "move-node-to-workspace E" ]; 
+        }
+        { 
+          "if".app-id = "com.hnc.Discord";
+          run = [ "layout floating" "move-node-to-workspace E" ]; 
+        }
+        
+        
+
+
+
+        { 
+          "if".app-id = "com.example.keyviz";
+          run = [ "layout floating" ]; 
+        }
+        { 
+          "if".app-id = "NULL-APP-BUNDLE-ID";
+          run = [ "layout floating" ]; 
         }
       ];
 
@@ -81,19 +105,43 @@
         alt-j = "focus down";
         alt-k = "focus up";
         alt-l = "focus right";
+        alt-shift-h = [ "move left" ];
+        alt-shift-j = [ "move down" ];
+        alt-shift-k = [ "move up" ];
+        alt-shift-l = [ "move right" ];
+        alt-cmd-tab = [
+          "move-node-to-monitor --wrap-around next"
+          "focus-monitor --wrap-around next"
+        ];
 
-        alt-minus = "resize smart -50";
-        alt-equal = "resize smart +50";
+        alt-shift-minus = "resize smart -50";
+        alt-shift-equal = "resize smart +50";
         alt-1 = "workspace 1";
         alt-2 = "workspace 2";
         alt-3 = "workspace 3";
         alt-4 = "workspace 4";
-        alt-shift-1 = [ "move-node-to-workspace 1" "workspace 1" ];
-        alt-shift-2 = [ "move-node-to-workspace 2" "workspace 2" ];
-        alt-shift-3 = [ "move-node-to-workspace 3" "workspace 3" ];
-        alt-shift-4 = [ "move-node-to-workspace 4" "workspace 4" ];
+        alt-t = "workspace T";
+        alt-v = "workspace V";
+        alt-e = "workspace E";
+        alt-shift-1 = "move-node-to-workspace 1" ;
+        alt-shift-2 = "move-node-to-workspace 2" ;
+        alt-shift-3 = "move-node-to-workspace 3" ;
+        alt-shift-4 = "move-node-to-workspace 4" ;
+        alt-shift-t = "move-node-to-workspace T" ;
+        alt-shift-v = "move-node-to-workspace V" ;
+        alt-shift-e = "move-node-to-workspace E" ;
+        alt-ctrl-1 = "summon-workspace 1";
+        alt-ctrl-2 = "summon-workspace 2";
+        alt-ctrl-3 = "summon-workspace 3";
+        alt-ctrl-4 = "summon-workspace 4";
+        
+        alt-q = [
+          "workspace Q"
+          ''exec-and-forget osascript -e "tell application 'QQ' to activate"''
+        ];
 
         alt-tab = "workspace-back-and-forth";
+        # See: https://nikitabobko.github.io/AeroSpace/commands#move-workspace-to-monitors
         alt-shift-tab = "move-workspace-to-monitor --wrap-around next";
         alt-f = "layout floating tiling";
         alt-shift-semicolon = "mode service";
@@ -102,7 +150,8 @@
       mode.service.binding = {
         esc = [ "reload-config" "mode main" ];
         r = [ "flatten-workspace-tree" "mode main" ];
-        f = [ "layout floating tiling" "mode main"]; # Toggle between floating and tiling layout
+        f = [ "layout floating tiling" "mode main" ]; # Toggle between floating and tiling layout
+        m = [ "fullscreen" "mode main" ];
         backspace = [ "close-all-windows-but-current" "mode main" ];
 
         alt-shift-h = [ "join-with left" "mode main" ];
