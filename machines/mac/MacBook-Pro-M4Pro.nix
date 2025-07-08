@@ -16,6 +16,7 @@
       ./../../configuration/darwin/pkgs/font.nix
       ./../../configuration/darwin/system/env.nix
 
+      ./../../configuration/darwin/gui/activitymonitor.nix
       ./../../configuration/darwin/gui/controlcenter.nix
       ./../../configuration/darwin/gui/dock.nix
       ./../../configuration/darwin/gui/finder.nix

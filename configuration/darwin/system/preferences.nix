@@ -9,7 +9,7 @@
       # mouse tracking speed
       ".GlobalPreferences"."com.apple.mouse.scaling" = 1.0;
 
-      
+
       WindowManager = {
         GloballyEnabled = false;                     # Enable Stage Manager Stage Manager arranges your recent windows into a single strip for reduced clutter and quick access
         HideDesktop = false;
@@ -37,6 +37,9 @@
         # sound 
         "com.apple.sound.beep.feedback" = 1;                  # Make a feedback sound when the system volume changed. 0 or 1 ,default = 1
         "com.apple.sound.beep.volume" = 1.000;
+
+
+
         AppleInterfaceStyleSwitchesAutomatically = true;      # Whether to automatically switch between light and dark mode
         AppleScrollerPagingBehavior = true;                   # Jump to the spot that’s clicked on the scroll bar
         AppleShowAllExtensions = true;                        # Whether to show all file extensions in Finder

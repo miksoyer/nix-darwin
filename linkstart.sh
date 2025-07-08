@@ -15,12 +15,18 @@ sudo git config --global --add safe.directory /etc/nix-darwin
 # 5. install determined nix, choose no to avoid install nix for xxx
 curl --proto '=https' --tlsv1.2 -sSf -L https://install.determinate.systems/nix | sh -s -- install
 
-# 6. edit your hostname in settings
-
+# 6. edit your hostname in settings ...Suggest that all names be the same
+sudo scutil --set HostName "HUAWEI-MateBook-Fold"
+sudo scutil --set LocalHostName "HUAWEI-MateBook-Fold"
+sudo scutil --set ComputerName "HUAWEI-MateBook-Fold"
 
 # 7. Installing nix-darwin
-sudo nix run nix-darwin/master#darwin-rebuild -- switch --impure --extra-experimental-features "nix-command flakes"
+sudo nix run nix-darwin/master#darwin-rebuild -- switch --impure
 
-# 8. rebuild
+#
+# :)
+#
+
+# etc... rebuild system
 sudo darwin-rebuild switch --impure --show-trace --flake /etc/nix-darwin#HUAWEI-MateBook-Fold
 

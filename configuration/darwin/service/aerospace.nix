@@ -50,9 +50,15 @@
           run = [ "layout floating" "move-node-to-workspace 4" ]; 
         }
         { 
+          "if".app-id = "com.apple.ActivityMonitor";
+          run = [ "layout floating" ]; 
+        }
+
+
+        { 
           "if".app-id = "com.google.Chrome";
           run = [ "move-node-to-workspace 2" ]; 
-          }
+        }
         { 
           "if".app-id = "com.github.wez.wezterm";
           run = [ "layout floating" "move-node-to-workspace T" ]; 
