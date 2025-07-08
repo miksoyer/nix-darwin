@@ -21,7 +21,7 @@
       "qqlive"
       "qqmusic"
       "raycast"
-      "wemeet"
+      "tencent-meeting"
     ];
     masApps = {
       # "Amphetamine" = 937984704;

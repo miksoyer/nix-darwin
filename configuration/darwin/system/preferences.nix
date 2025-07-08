@@ -10,21 +10,6 @@
       ".GlobalPreferences"."com.apple.mouse.scaling" = 1.0;
 
 
-      WindowManager = {
-        GloballyEnabled = false;                     # Enable Stage Manager Stage Manager arranges your recent windows into a single strip for reduced clutter and quick access
-        HideDesktop = false;
-        StageManagerHideWidgets = false;
-        StandardHideDesktopIcons = false;
-        StandardHideWidgets = false;
-        EnableStandardClickToShowDesktop = false;   # false means “Only in Stage Manager” true means “Always”
-        AppWindowGroupingBehavior = true;            # Grouping strategy when showing windows from an application
-        AutoHide = false;                           # Auto hide stage strip showing recent apps.
-        EnableTiledWindowMargins = true;            # Enable window margins when tiling windows.
-        EnableTilingByEdgeDrag = true;              # Enable dragging windows to screen edges to tile them
-        EnableTilingOptionAccelerator = true;       # Enable holding alt to tile windows. 
-        EnableTopTilingByEdgeDrag = true;           # Enable dragging windows to the menu bar to fill the screen. 
-      };
-
       loginwindow.GuestEnabled = false;
 
       CustomSystemPreferences = {
@@ -38,9 +23,9 @@
         "com.apple.sound.beep.feedback" = 1;                  # Make a feedback sound when the system volume changed. 0 or 1 ,default = 1
         "com.apple.sound.beep.volume" = 1.000;
 
+        # Whether to automatically switch between light and dark mode
+        AppleInterfaceStyleSwitchesAutomatically = true;
 
-
-        AppleInterfaceStyleSwitchesAutomatically = true;      # Whether to automatically switch between light and dark mode
         AppleScrollerPagingBehavior = true;                   # Jump to the spot that’s clicked on the scroll bar
         AppleShowAllExtensions = true;                        # Whether to show all file extensions in Finder
         AppleShowScrollBars = "Always";                       # When to show the scrollbars.(Automatic)

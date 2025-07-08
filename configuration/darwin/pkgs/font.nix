@@ -1,5 +1,8 @@
 { pkgs, ... }:
 {
+  # Sets the level of font smoothing, Type: null or one of 0, 1, 2
+  # system.defaults.NSGlobalDomain.AppleFontSmoothing = 2;
+
   fonts.packages = with pkgs; [
     nerd-fonts.fira-code
     nerd-fonts.fira-mono

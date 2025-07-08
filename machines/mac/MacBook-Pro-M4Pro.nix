@@ -20,6 +20,7 @@
       ./../../configuration/darwin/gui/controlcenter.nix
       ./../../configuration/darwin/gui/dock.nix
       ./../../configuration/darwin/gui/finder.nix
+      ./../../configuration/darwin/gui/windowmanager.nix
 
       ./../../configuration/darwin/pkgs/homebrew.nix
       ./../../configuration/darwin/system/hook.nix
