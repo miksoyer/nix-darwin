@@ -59,6 +59,8 @@ in
     pkgs.discord
     pkgs.ollama
     # pkgs.qemu
+
+    pkgs.sketchybar
     # pkgs.istat-menus # $96
   ];
 

@@ -23,6 +23,10 @@
       ./../../configuration/darwin/pkgs/homebrew.nix
       ./../../configuration/darwin/system/hook.nix
 
+      ./../../configuration/darwin/service/aerospace.nix
+      ./../../configuration/darwin/service/jankyborders.nix
+
+
       # This Machine's special configuration
       {
         # set up for touch ID
