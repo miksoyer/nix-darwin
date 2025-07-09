@@ -1,4 +1,6 @@
-#!/user/bin/env sh
+#!/bin/sh
+
+PLUGIN_DIR="$HOME/.config/sketchybar/plugins"
 
 for sid in $(aerospace list-workspaces --all); do
   monitor=$(aerospace list-windows --workspace "$sid" --format "%{monitor-appkit-nsscreen-screens-id}")
@@ -25,5 +27,5 @@ for sid in $(aerospace list-workspaces --all); do
     background.height=25 \
     label.drawing=on \
     click_script="aerospace workspace $sid" \
-    script="$CONFIG_DIR/plugins/aerospace.sh $sid"
+    script="$PLUGIN_DIR/aerospace.sh $sid"
 done

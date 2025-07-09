@@ -1,12 +1,8 @@
-#!/user/bin/env sh
+#!/bin/sh
 
-# A color config for hover and highlight effects
-# Example
-# export BAR_COLOR=0x40000000
-# export ITEM_BG_COLOR=0xff353c3f
-# export ACCENT_COLOR=0xffffffff
-# export BACKGROUND=0xff101314
-source "$CONFIG_DIR/colors.sh"
+PLUGIN_DIR="$HOME/.config/sketchybar/plugins"
+
+source "$HOME/.config/sketchybar/colors.sh"
 
 FOCUSED_WORKSPACE=$(aerospace list-workspaces --focused --format "%{workspace}")
 
@@ -40,7 +36,7 @@ APPS_INFO=$(aerospace list-windows --workspace "$1" --json --format "%{monitor-a
 
 IFS=$'\n'
 for sid in $(echo "$APPS_INFO" | jq -r "map ( .\"app-name\" ) | .[]"); do
-  icons+=$("$CONFIG_DIR/plugins/icon_map_fn.sh" "$sid")
+  icons+=$("$HOME/.config/sketchybar/icons.sh" "$sid")
   icons+="  "
 done
 
@@ -94,4 +90,4 @@ else
       icon.color="$ACCENT_COLOR" \
       background.color="$BAR_COLOR"
   fi
-fi  
+fi

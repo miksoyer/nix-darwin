@@ -1,7 +1,6 @@
-#!/user/bin/env sh
+#!/bin/sh
 
 PLUGIN_DIR="$HOME/.config/sketchybar/plugins"
-ITEM_DIR="$HOME/.config/sketchybar/items"
 
 
 parameters=(

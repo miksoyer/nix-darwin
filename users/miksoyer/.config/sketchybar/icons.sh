@@ -1,4 +1,4 @@
-#!/usr/bin/env sh
+#!/bin/sh
 
 CACHE_DIR="$HOME/.config/sketchybar/cache"
 CACHE_FILE="$CACHE_DIR/icons.txt"
@@ -7,7 +7,7 @@ CACHE_FILE="$CACHE_DIR/icons.txt"
 source "$CACHE_DIR/icon_map.sh"
 
 APP_NAME="$1"
-CACHED_ICON=$(/run/current-system/sw/bin/rg --no-heading --fixed-strings "^$APP_NAME|" "$CACHE_FILE" | cut -d '|' -f2)
+CACHED_ICON=$(/run/current-system/sw/bin/rg -F "$APP_NAME|" "$CACHE_FILE" | cut -d '|' -f2)
 
 if [ -n "$CACHED_ICON" ]; then
   echo "$CACHED_ICON"
