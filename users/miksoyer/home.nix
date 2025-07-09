@@ -45,6 +45,7 @@ in
     # code
     pkgs.rustup
     pkgs.go
+    pkgs.lua
 
     # dev tools
     pkgs.postman
@@ -60,7 +61,8 @@ in
     pkgs.ollama
     # pkgs.qemu
 
-    pkgs.sketchybar
+    # pkgs.sketchybar
+    pkgs.sketchybar-app-font
     # pkgs.istat-menus # $96
   ];
 
