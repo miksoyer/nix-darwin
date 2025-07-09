@@ -61,7 +61,7 @@ in
     pkgs.ollama
     # pkgs.qemu
 
-    # pkgs.sketchybar
+    
     pkgs.sketchybar-app-font
     # pkgs.istat-menus # $96
   ];

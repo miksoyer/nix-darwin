@@ -1,4 +1,4 @@
-#!/bin/sh
+#!/user/bin/env sh
 
 # The $NAME variable is passed from sketchybar and holds the name of
 # the item invoking this script:

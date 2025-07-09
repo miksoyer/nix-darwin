@@ -27,6 +27,7 @@
 
       ./../../configuration/darwin/service/aerospace.nix
       ./../../configuration/darwin/service/jankyborders.nix
+      ./../../configuration/darwin/service/sketchybar.nix
 
 
       # This Machine's special configuration
