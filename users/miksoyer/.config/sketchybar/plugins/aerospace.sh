@@ -4,10 +4,11 @@ PLUGIN_DIR="$HOME/.config/sketchybar/plugins"
 
 source "$HOME/.config/sketchybar/colors.sh"
 
-FOCUSED_WORKSPACE=$(aerospace list-workspaces --focused --format "%{workspace}")
+CURRENT_WORKSPACE=$(aerospace list-workspaces --focused --format "%{workspace}")
+
 
 if [ "$SENDER" == "mouse.entered" ]; then
-  if [ "$1" = "$FOCUSED_WORKSPACE" ]; then
+  if [ "$1" = "$CURRENT_WORKSPACE" ]; then
     exit 0
   fi
   sketchybar --set "$NAME" \
@@ -19,7 +20,7 @@ if [ "$SENDER" == "mouse.entered" ]; then
 fi
 
 if [ "$SENDER" == "mouse.exited" ]; then
-  if [ "$1" = "$FOCUSED_WORKSPACE" ]; then
+  if [ "$1" = "$CURRENT_WORKSPACE" ]; then
     exit 0
   fi
   sketchybar --set "$NAME" \

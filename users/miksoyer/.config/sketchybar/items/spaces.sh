@@ -2,6 +2,10 @@
 
 PLUGIN_DIR="$HOME/.config/sketchybar/plugins"
 
+source "$HOME/.config/sketchybar/colors.sh"
+
+sketchybar --add event aerospace_workspace_change
+
 for sid in $(aerospace list-workspaces --all); do
   monitor=$(aerospace list-windows --workspace "$sid" --format "%{monitor-appkit-nsscreen-screens-id}")
 
@@ -10,8 +14,7 @@ for sid in $(aerospace list-workspaces --all); do
   fi
 
   sketchybar --add item space."$sid" left \
-    --subscribe space."$sid" aerospace_workspace_change display_change system_woke mouse.entered mouse.exited \
-    --set space."$sid" \
+    --subscribe space."$sid" aerospace_workspace_change display_change system_woke mouse.entered mouse.exited --set space."$sid" \
     display="$monitor" \
     padding_right=0 \
     icon="$sid" \

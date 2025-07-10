@@ -54,9 +54,10 @@ source "$ITEMS_DIR/front_app.sh"
 
 source "$ITEMS_DIR/clock.sh"
 
-source "$ITEMS_DIR/volume.sh"
-
+# group
 source "$ITEMS_DIR/battery.sh"
+source "$ITEMS_DIR/volume.sh"
+source "$ITEMS_DIR/network.sh"
 
 ##### Force all scripts to run the first time (never do this in a script) #####
 sketchybar --update

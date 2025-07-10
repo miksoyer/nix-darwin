@@ -26,12 +26,12 @@
       accordion-padding = 50;               # Padding between windows in an accordion container.
 
       # Commands to run every time workspace changes.
-      exec-on-workspace-change = [];
-      # [
-      #   "/bin/bash"
-      #   "-c"
-      #   "sketchybar --trigger aerospace_workspace_change FOCUSED=$AEROSPACE_FOCUSED_WORKSPACE"
-      # ];
+      exec-on-workspace-change = [ 
+        "/bin/bash"
+        "-c"
+        "sketchybar --trigger aerospace_workspace_change PREV_WORKSPACE=$AEROSPACE_PREV_WORKSPACE FOCUSED_WORKSPACE=$AEROSPACE_FOCUSED_WORKSPACE" 
+      ];
+      
       # Commands to run every time focused window or workspace changes.
       on-focus-changed = [];
       # Commands to run every time focused monitor changes.
@@ -98,9 +98,9 @@
         inner.horizontal = 15;
         inner.vertical = 10;
         outer.left = 10;
-        outer.bottom = 15;
-        outer.top = 10;
-        outer.right = 10;
+        outer.bottom = 10;
+        outer.top = 12;
+        outer.right = 12;
       };
       
       key-mapping.preset = "qwerty";        # Keymapping preset. Type: one of “qwerty”, “dvorak”
