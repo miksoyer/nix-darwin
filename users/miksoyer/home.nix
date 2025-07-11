@@ -62,7 +62,6 @@ in
     # pkgs.qemu
 
     
-    pkgs.sketchybar-app-font
     # pkgs.istat-menus # $96
   ];
 
@@ -72,6 +71,7 @@ in
     ".config/bat" = { source = "/etc/nix-darwin/users/${myname}/.config/bat/"; recursive = true; };
     ".config/eza" = { source = "/etc/nix-darwin/users/${myname}/.config/eza/"; recursive = true;};
     ".config/starship" = { source = "/etc/nix-darwin/users/${myname}/.config/starship/"; recursive = true; };
+    ".config/vscode" = { source = "/etc/nix-darwin/users/${myname}/.config/vscode/"; recursive = true; };
     ".config/zsh" = { source = "/etc/nix-darwin/users/${myname}/.config/zsh/"; recursive = true;  };
     ".config/wezterm" = { source = "/etc/nix-darwin/users/${myname}/.config/wezterm/"; recursive = true; };
     ".config/yazi" = { source = "/etc/nix-darwin/users/${myname}/.config/yazi/"; recursive = true; };

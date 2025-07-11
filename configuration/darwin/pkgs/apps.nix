@@ -5,7 +5,7 @@
       # GUI software
       pkgs.wezterm
       pkgs.obsidian
-      pkgs.vscode
+      #pkgs.vscode # /nix/store is readonly, install in brew
       pkgs.google-chrome
       pkgs.iina
       pkgs.chatgpt

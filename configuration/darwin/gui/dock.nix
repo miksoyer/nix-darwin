@@ -13,7 +13,7 @@
       "/Applications/Nix Apps/Obsidian.app"
       "/Applications/Nix Apps/Google Chrome.app"
       "/Applications/Nix Apps/WezTerm.app"
-      "/Applications/Nix Apps/Visual Studio Code.app"
+      "/Applications/Visual Studio Code.app"
       "/Users/miksoyer/Applications/Home Manager Apps/Clion.app"
 
     ];

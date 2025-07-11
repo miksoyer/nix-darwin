@@ -23,6 +23,7 @@
       "tencent-meeting"
       "font-sf-pro"
       "sf-symbols"
+      "visual-studio-code"
     ];
     masApps = {
       # "Amphetamine" = 937984704;
