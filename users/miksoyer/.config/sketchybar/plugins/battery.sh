@@ -1,47 +1,32 @@
-#!/bin/sh
+#!/bin/bash
 
+source "$HOME/.config/sketchybar/icons.sh"
 source "$HOME/.config/sketchybar/colors.sh"
 
-PERCENTAGE="$(pmset -g batt | grep -Eo "\d+%" | cut -d% -f1)"
-CHARGING="$(pmset -g batt | grep 'AC Power')"
+PERCENTAGE=$(pmset -g batt | grep -Eo "\d+%" | cut -d% -f1)
+CHARGING=$(pmset -g batt | grep 'AC Power')
 
-sketchybar --set "${NAME}" icon.color=0xff989898
-
-if [ "$PERCENTAGE" = "" ]; then
+if [ $PERCENTAGE = "" ]; then
   exit 0
 fi
 
-if [[ ${CHARGING} != "" ]]; then
-  case ${PERCENTAGE} in
-    9[0-9]|100) ICON="􀛨" COLOR="$GREEN"
-    ;;
-    [6-8][0-9]) ICON="􀺸" COLOR="$YELLOW"
-    ;;
-    [3-5][0-9]) ICON="􀺶" COLOR="$ORANGE"
-    ;;
-    [1-2][0-9]) ICON="􀛩" COLOR="$RED"
-    ;;
-    *) ICON="􀛪" COLOR="$RED"
-  esac
-
-fi
-
-case "${PERCENTAGE}" in
-  9[0-9]|100) ICON="􀛨" COLOR="$GREEN"
+DRAWING=on
+COLOR=$WHITE
+case ${PERCENTAGE} in
+  9[0-9]|100) ICON=$BATTERY_100; DRAWING=off
   ;;
-  [6-8][0-9]) ICON="􀺸" COLOR="$YELLOW"
+  [6-8][0-9]) ICON=$BATTERY_75; DRAWING=off
   ;;
-  [3-5][0-9]) ICON="􀺶" COLOR="$ORANGE"
+  [3-5][0-9]) ICON=$BATTERY_50
   ;;
-  [1-2][0-9]) ICON="􀛩" COLOR="$RED"
+  [1-2][0-9]) ICON=$BATTERY_25; COLOR=$ORANGE
   ;;
-  *) ICON="􀛪" COLOR="$RED"
+  *) ICON=$BATTERY_0; COLOR=$RED
 esac
 
-if [[ "$CHARGING" != "" ]]; then
-  ICON="􀢋"
+if [[ $CHARGING != "" ]]; then
+  ICON=$BATTERY_CHARGING
+  DRAWING=off
 fi
 
-# The item invoking this script (name $NAME) will get its icon and label
-# updated with the current battery status
-sketchybar --set "$NAME" icon="$ICON" icon.color="$COLOR" label="${PERCENTAGE}%" 
+sketchybar --set $NAME drawing=$DRAWING icon="$ICON" icon.color=$COLOR

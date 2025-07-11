@@ -1,34 +1,30 @@
-#!/bin/sh
+#!/bin/bash
 
-PLUGIN_DIR="$HOME/.config/sketchybar/plugins"
+SPACE_SIDS=(1 2 3 4 5 6 7 8 9 10)
 
-source "$HOME/.config/sketchybar/colors.sh"
 
-sketchybar --add event aerospace_workspace_change
 
-for sid in $(aerospace list-workspaces --all); do
-  monitor=$(aerospace list-windows --workspace "$sid" --format "%{monitor-appkit-nsscreen-screens-id}")
-
-  if [ -z "$monitor" ]; then
-    monitor="1"
-  fi
-
-  sketchybar --add item space."$sid" left \
-    --subscribe space."$sid" aerospace_workspace_change display_change system_woke mouse.entered mouse.exited --set space."$sid" \
-    display="$monitor" \
-    padding_right=0 \
-    icon="$sid" \
-    label.padding_right=7 \
-    icon.padding_left=7 \
-    icon.padding_right=4 \
-    background.drawing=on \
-    label.font="sketchybar-app-font:Regular:16.0" \
-    background.color="$ACCENT_COLOR" \
-    icon.color="$BACKGROUND" \
-    label.color="$BACKGROUND" \
-    background.corner_radius=5 \
-    background.height=25 \
-    label.drawing=on \
-    click_script="aerospace workspace $sid" \
-    script="$PLUGIN_DIR/aerospace.sh $sid"
+for sid in "${SPACE_SIDS[@]}"
+do
+  space=(
+    space=$sid
+    icon=$sid                                  
+    icon.highlight_color=$RED
+    icon.padding_left=10
+    label.font="sketchybar-app-font:Regular:16.0" 
+    label.padding_right=20                     
+    label.y_offset=-1                          
+    script="$PLUGIN_DIR/space.sh"
+  )
+  sketchybar --add space space.$sid left                                 \
+             --set space.$sid "${space[@]}"
 done
+
+sketchybar --add item space_separator left                             \
+           --set space_separator icon="􀆓"                                \
+                                 icon.color=$WHITE \
+                                 icon.padding_left=4                   \
+                                 label.drawing=off                     \
+                                 background.drawing=off                \
+                                 script="$PLUGIN_DIR/space_windows.sh" \
+           --subscribe space_separator space_windows_change                           

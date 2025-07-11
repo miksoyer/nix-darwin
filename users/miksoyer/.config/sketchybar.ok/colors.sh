@@ -1,10 +1,9 @@
-#!/usr/bin/env bash
+#!/bin/sh
 
-#
-#
-# Catppuccin Macchiato palette
-#
-#
+export BAR_COLOR=0x40000000
+export ITEM_BG_COLOR=0xff353c3f
+export ACCENT_COLOR=0xffffffff
+export BACKGROUND=0xff101314
 
 export BASE=0xff24273a
 export MANTLE=0xff1e2030
@@ -37,6 +36,8 @@ export PINK=0xfff5bde6
 export FLAMINGO=0xfff0c6c6
 export ROSEWATER=0xfff4dbd6
 
+export CYAN=0xfff5bde6
+
 export RANDOM_CAT_COLOR=("$BLUE" "$LAVENDER" "$SAPPHIRE" "$SKY" "$TEAL" "$GREEN" "$YELLOW" "$PEACH" "$MAROON" "$RED" "$MAUVE" "$PINK" "$FLAMINGO" "$ROSEWATER")
 
 function getRandomCatColor() {
@@ -54,5 +55,4 @@ export TRANSPARENT=0x00000000
 export BAR_COLOR=$BASE
 export ICON_COLOR=$TEXT # Color of all icons
 export LABEL_COLOR=$TEXT # Color of all labels
-
 

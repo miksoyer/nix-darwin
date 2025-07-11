@@ -8,6 +8,7 @@
       pkgs.vscode
       pkgs.google-chrome
       pkgs.iina
+      pkgs.chatgpt
       pkgs.flameshot
       
 

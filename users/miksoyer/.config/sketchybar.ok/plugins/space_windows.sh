@@ -1,14 +1,15 @@
-#!/bin/bash
+#!/bin/sh
+
 
 if [ "$SENDER" = "space_windows_change" ]; then
-  space="$(echo "$INFO" | jq -r '.space')"
-  apps="$(echo "$INFO" | jq -r '.apps | keys[]')"
+  space="$(echo "$INFO" | /run/current-system/sw/bin/jq -r '.space')"
+  apps="$(echo "$INFO" | /run/current-system/sw/bin/jq -r '.apps | keys[]')"
 
   icon_strip=" "
   if [ "${apps}" != "" ]; then
     while read -r app
     do
-      icon_strip+=" $($CONFIG_DIR/plugins/icon_map.sh "$app")"
+      icon_strip+=" $(icon="$($HOME/.config/sketchybar/icons.sh "$app")"
     done <<< "${apps}"
   else
     icon_strip=" —"

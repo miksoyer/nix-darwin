@@ -7,6 +7,7 @@
       "/System/Applications/App Store.app"
       "/System/Applications/Mail.app"
       "/Applications/QQMusic.app"
+      "/Applications/Nix Apps/ChatGPT.app"
       "/Users/miksoyer/Applications/Home Manager Apps/WeChat.app"
       "/Users/miksoyer/Applications/Home Manager Apps/QQ.app"
       "/Applications/Nix Apps/Obsidian.app"
@@ -26,7 +27,7 @@
     autohide-time-modifier = 2.0;                         # Sets the speed of the animation when hiding/showing the Dock.(1.0)
     expose-animation-duration = 1.0;
     largesize = 80;                                       # Magnified icon size on hover. The default is 16.[16,128]
-    tilesize = 50;
+    tilesize = 40;
     magnification = true;                                 # Magnify icon on hover
     mineffect = "genie";                                   # one of (default)“genie”, “suck”, “scale”
     minimize-to-application = true;                       # open it, open it, open it!

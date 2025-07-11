@@ -1,43 +1,23 @@
-#!/usr/bin/env sh
+#!/bin/sh
 
-# General Icons
-export LOADING=􀖇
-export APPLE=􀣺
-export PREFERENCES=􀺽
-export ACTIVITY=􀒓
-export LOCK=􀒳
-export LOGOUT=
-export POWER=
-export REBOOT=
-export SLEEP=⏾
-export BELL=􀋚
-export BELL_DOT=􀝗
+CACHE_DIR="$HOME/.config/sketchybar/cache"
+CACHE_FILE="$CACHE_DIR/icons.txt"
+[ ! -f "$CACHE_FILE" ] && touch $CACHE_FILE
 
-export BATTERY=
-export CPU=
-export DISK=
-export MEMORY=﬙
-export NETWORK=
-export NETWORK_DOWN=
-export NETWORK_UP=
+source "$CACHE_DIR/icon_map.sh"
 
-# Git Icons
-export GIT_ISSUE=􀍷
-export GIT_DISCUSSION=􀒤
-export GIT_PULL_REQUEST=􀙡
-export GIT_COMMIT=􀡚
-export GIT_INDICATOR=
+APP_NAME="$1"
+CACHED_ICON=$(/run/current-system/sw/bin/rg -F "$APP_NAME|" "$CACHE_FILE" | cut -d '|' -f2)
 
-# Spotify Icons
-export SPOTIFY_BACK=􀊎
-export SPOTIFY_PLAY_PAUSE=􀊈
-export SPOTIFY_NEXT=􀊐
-export SPOTIFY_SHUFFLE=􀊝
-export SPOTIFY_REPEAT=􀊞
+if [ -n "$CACHED_ICON" ]; then
+  echo "$CACHED_ICON"
+  exit 0
+fi
 
-# Yabai Icons
-export YABAI_STACK=􀏭
-export YABAI_FULLSCREEN_ZOOM=􀏜
-export YABAI_PARENT_ZOOM=􀥃
-export YABAI_FLOAT=􀢌
-export YABAI_GRID=􀧍
+__icon_map "$APP_NAME"
+
+if [ -n "$icon_result" ]; then
+  echo "$APP_NAME|$icon_result" >>"$CACHE_FILE"
+fi
+
+echo "$icon_result"

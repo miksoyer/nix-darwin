@@ -1,23 +1,46 @@
-#!/bin/sh
+#!/bin/bash
 
-CACHE_DIR="$HOME/.config/sketchybar/cache"
-CACHE_FILE="$CACHE_DIR/icons.txt"
-[ ! -f "$CACHE_FILE" ] && touch $CACHE_FILE
+# General Icons
+LOADING=􀖇
+APPLE=􀣺
+PREFERENCES=􀺽
+ACTIVITY=􀒓
+LOCK=􀒳
+BELL=􀋚
+BELL_DOT=􀝗
 
-source "$CACHE_DIR/icon_map.sh"
+# Git Icons
+GIT_ISSUE=􀍷
+GIT_DISCUSSION=􀒤
+GIT_PULL_REQUEST=􀙡
+GIT_COMMIT=􀡚
+GIT_INDICATOR=􀂓
 
-APP_NAME="$1"
-CACHED_ICON=$(/run/current-system/sw/bin/rg -F "$APP_NAME|" "$CACHE_FILE" | cut -d '|' -f2)
+# Spotify Icons
+SPOTIFY_BACK=􀊎
+SPOTIFY_PLAY_PAUSE=􀊈
+SPOTIFY_NEXT=􀊐
+SPOTIFY_SHUFFLE=􀊝
+SPOTIFY_REPEAT=􀊞
 
-if [ -n "$CACHED_ICON" ]; then
-  echo "$CACHED_ICON"
-  exit 0
-fi
+# Yabai Icons
+YABAI_STACK=􀏭
+YABAI_FULLSCREEN_ZOOM=􀏜
+YABAI_PARENT_ZOOM=􀥃
+YABAI_FLOAT=􀢌
+YABAI_GRID=􀧍
 
-__icon_map "$APP_NAME"
+# Battery Icons
+BATTERY_100=􀛨
+BATTERY_75=􀺸
+BATTERY_50=􀺶
+BATTERY_25=􀛩
+BATTERY_0=􀛪
+BATTERY_CHARGING=􀢋
 
-if [ -n "$icon_result" ]; then
-  echo "$APP_NAME|$icon_result" >>"$CACHE_FILE"
-fi
-
-echo "$icon_result"
+# Volume Icons
+VOLUME_100=􀊩
+VOLUME_66=􀊧
+VOLUME_33=􀊥
+VOLUME_10=􀊡
+VOLUME_0=􀊣

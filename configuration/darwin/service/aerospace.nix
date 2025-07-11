@@ -79,7 +79,10 @@
           "if".app-id = "com.hnc.Discord";
           run = [ "layout floating" "move-node-to-workspace E" ]; 
         }
-        
+        { 
+          "if".app-id = "com.openai.chat";
+          run = [ "move-node-to-workspace E" ]; 
+        }
         
 
 
@@ -98,7 +101,7 @@
         inner.horizontal = 15;
         inner.vertical = 10;
         outer.left = 10;
-        outer.bottom = 10;
+        outer.bottom = 50;
         outer.top = 12;
         outer.right = 12;
       };
