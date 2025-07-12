@@ -1,5 +1,9 @@
 #!/bin/sh
 
+source $CONFIG_DIR/colors.sh
+source $CONFIG_DIR/icons.sh
+source $CONFIG_DIR/settings.sh
+
 attr_front_app=(
     background.color=0xffa6da95
     background.padding_left=0     

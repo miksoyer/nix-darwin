@@ -1,4 +1,6 @@
 #!/bin/sh
 
-sketchybar --set "$NAME" icon="$($CONFIG_DIR/cache/get_icon.sh "$INFO")" icon.padding_right=5 \
-           --set "$NAME".name label="$INFO"
+ICON_PIC=$(sh "$HOME/.config/sketchybar/cache/get_icon.sh" "$INFO")
+
+sketchybar    -m    --set   "$NAME"         icon="$ICON_PIC" icon.padding_right=5 \
+                    --set   "$NAME".name    label="$INFO"
