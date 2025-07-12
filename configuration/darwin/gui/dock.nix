@@ -27,7 +27,7 @@
     autohide-time-modifier = 2.0;                         # Sets the speed of the animation when hiding/showing the Dock.(1.0)
     expose-animation-duration = 1.0;
     largesize = 80;                                       # Magnified icon size on hover. The default is 16.[16,128]
-    tilesize = 40;
+    tilesize = 52;
     magnification = true;                                 # Magnify icon on hover
     mineffect = "genie";                                   # one of (default)“genie”, “suck”, “scale”
     minimize-to-application = true;                       # open it, open it, open it!

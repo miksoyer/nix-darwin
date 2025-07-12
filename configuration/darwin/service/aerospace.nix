@@ -83,8 +83,10 @@
           "if".app-id = "com.openai.chat";
           run = [ "move-node-to-workspace E" ]; 
         }
-        
-
+       	{
+          "if".app-id = "com.apple.SFSymbols";
+	  run = [ "layout floating" ];
+	}
 
 
         { 
@@ -101,7 +103,7 @@
         inner.horizontal = 15;
         inner.vertical = 10;
         outer.left = 10;
-        outer.bottom = 50;
+        outer.bottom = 10;
         outer.top = 12;
         outer.right = 12;
       };

@@ -14,6 +14,8 @@
 
 
       # CLI tools
+      pkgs.gawk
+      pkgs.mawk
       pkgs.neovim
       pkgs.helix
       pkgs.fastfetch
