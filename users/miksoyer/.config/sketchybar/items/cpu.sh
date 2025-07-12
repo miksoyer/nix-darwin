@@ -1,4 +1,6 @@
-#!/bin/bash
+#!/bin/sh
+
+
 source "$HOME/.config/sketchybar/colors.sh"
 
 cpu_top=(

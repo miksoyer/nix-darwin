@@ -1,5 +1,4 @@
-#!/usr/bin/env zsh
-
+#!/bin/sh
 
 attr_front_app=(
     background.color=0xffa6da95

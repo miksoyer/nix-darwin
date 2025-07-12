@@ -1,3 +1,5 @@
+#!/bin/sh
+
 attr_wechat=(
   icon=":wechat:"
   icon.font="$FONT_ICON:Regular:16.0"

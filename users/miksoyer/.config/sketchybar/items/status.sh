@@ -1,4 +1,4 @@
-#!/usr/bin/env zsh
+#!/bin/sh
 
 attr_cpu_percent=(
 	label.font="$FONT_LABEL:Heavy:12"

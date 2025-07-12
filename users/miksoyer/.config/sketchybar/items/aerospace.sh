@@ -1,4 +1,4 @@
-#!/usr/bin/env zsh
+#!/bin/sh
 
 sketchybar  -m  --add       item    aerospace   left                                \
                 --set               aerospace   background.color=0xfff5a97f         \

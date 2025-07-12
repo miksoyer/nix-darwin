@@ -1,3 +1,6 @@
+  #!/bin/sh
+
+  
   attr_calendar=(
     icon=􀉉
     icon.color=0xfff6c177

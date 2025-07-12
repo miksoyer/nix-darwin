@@ -1,4 +1,4 @@
-#!/usr/bin/env zsh
+#!/bin/sh
 
 CACHE_DIR="$HOME/.config/sketchybar/cache"
 CACHE_FILE="$CACHE_DIR/icons.txt"

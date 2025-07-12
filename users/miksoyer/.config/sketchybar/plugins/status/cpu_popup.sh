@@ -1,4 +1,4 @@
-#!/usr/bin/env bash
+#!/bin/sh
 
 # 获取详细数据
 read -r USER SYS IDLE <<<$(top -l 1 | grep "^CPU" | awk -F'[:,%]+' '{ printf("%s %s %s", $3, $5, $7) }')

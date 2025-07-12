@@ -1,4 +1,4 @@
-#!/usr/bin/env zsh
+#!/bin/sh
 
 attr_battery=(
   icon=$BATTERY_100

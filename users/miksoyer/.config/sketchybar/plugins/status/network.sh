@@ -1,4 +1,4 @@
-#!/usr/bin/env zsh
+#!/bin/sh
 
 INTERFACE="en0"
 INTERVAL=1

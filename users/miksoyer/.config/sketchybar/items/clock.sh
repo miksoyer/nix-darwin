@@ -1,4 +1,6 @@
-#!/usr/bin/env zsh
+#!/bin/sh
+
+
 sketchybar -m --add item clock right \
     --set clock \
     icon=󰃰 \

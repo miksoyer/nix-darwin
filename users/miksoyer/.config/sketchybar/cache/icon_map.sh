@@ -1,4 +1,4 @@
-#!/usr/bin/env zsh
+#!/bin/sh
 
 ### START-OF-ICON-MAP
 function __icon_map() {
