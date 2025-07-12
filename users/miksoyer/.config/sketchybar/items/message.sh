@@ -4,7 +4,7 @@ attr_wechat=(
   icon.color=0xff1aad19
   label="-"
   update_freq=5
-  script="$PLUGIN_DIR/message/message.sh"
+  script="$PLUGIN_DIR/message.sh"
   click_script="open -a Wechat"
 )
 
@@ -14,7 +14,7 @@ attr_qq=(
   icon.color=0xfff38ba8
   label="-"
   update_freq=5
-  script="$PLUGIN_DIR/message/message.sh"
+  script="$PLUGIN_DIR/message.sh"
   click_script="open -a QQ"
 )
 
