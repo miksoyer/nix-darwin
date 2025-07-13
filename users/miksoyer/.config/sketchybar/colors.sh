@@ -48,3 +48,11 @@ export NET_THUNDERBOLT=􀒗  # Thunderbolt bridge connected
 export NET_DISCONNECTED=􀙇 # Network disconnected, but Wi-Fi turned on
 export NET_OFF=􀙈          # Network disconnected, Wi-Fi turned off
 
+
+# spitify
+BACKGROUND=0xff1e1e2e
+BACKGROUND_BORDER=0xff45475a
+ACCENT_COLOR=0xffd79921
+SECONDARY_COLOR=0xffbbbbbb
+TERTIARY_COLOR=0xff888888
+DISABLED_COLOR=0xffd3d3d3

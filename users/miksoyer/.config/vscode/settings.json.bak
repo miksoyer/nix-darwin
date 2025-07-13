@@ -1,97 +1,105 @@
 {
-    /*
-        custom
-    */
-    "editor.fontSize": 13,
-    "editor.tabSize": 2,
-    "editor.mouseWheelZoom": true,
-    "window.doubleClickIconToClose": true,
-    "update.mode": "manual",
-    "editor.experimentalGpuAcceleration": "on",
-    "editor.guides.bracketPairs": true,
-    "editor.guides.highlightActiveIndentation": false,
-    "editor.scrollbar.horizontal": "visible",
-    "editor.scrollbar.scrollByPage": true,
-    "editor.scrollbar.vertical": "visible",
-    "editor.fontLigatures": true,
-    "editor.fontFamily": "'Maple Mono NF CN', monospace",
-    "workbench.activityBar.location": "top",
-
-    /*
-        terminal
-    */
-    "terminal.external.osxExec": "WezTerm.app",
-    "terminal.integrated.cursorBlinking": true,
-    "terminal.integrated.cursorStyle": "line",
-    "terminal.integrated.cursorStyleInactive": "none",
-    "terminal.integrated.cursorWidth": 2,
-    "terminal.integrated.fontLigatures.enabled": true,
-    "terminal.integrated.fontFamily": "'Maple Mono NF CN'",
-
-    /*
-        Extension: vscode animations
-    */
-    "animations.Install-Method": "Custom UI Style",
-    "animations.CursorAnimation": true,
-    "animations.Focus-Dimming-Mode": "Everything But Editor",
-    "animations.Focus-Dimming-Amount": 75,
-    "animations.Tabs": "Slide",
-
-    /*
-        Extension: background
-    */
-    "background.panel": {
-
-        "images": [ "file:///Users/miksoyer/.config/wezterm/backdrops/background.jpeg" ],
-        "opacity": 0.1,
-        "size": "cover",
-        "position": "center",
-        "interval": 0,
-        "random": false
-    }, //end
-    
-
-    /*
-        Extension: custom-ui
-    */
-    // "custom-ui-style.background.syncURL": "file:///Users/miksoyer/.config/wezterm/backdrops/background.jpeg",
-    "custom-ui-style.external.imports": [
-        "file:///Users/miksoyer/.vscode/extensions/brandonkirbyson.vscode-animations-2.0.7/dist/updateHandler.js"
-    ],
-    "custom-ui-style.external.loadStrategy": "cache",
-    "custom-ui-style.font.monospace": "Maple Mono NF CN",
-    "workbench.colorCustomizations": {
-        "dropdown.background": "#ffffff10",     // 深灰蓝 + 80% 不透明
-        "dropdown.border": "#ffffff30",         // 白色边框，20% 不透明
-        "editorWidget.background": "#1e1e1eed", // 75% 不透明
-        "quickInput.foreground": "#ffffffee",     // 更浅字体色
-        "widget.shadow": "#00000055",            // 强化阴影避免透视太深
+      /*
+          custom
+      */
+      "editor.fontSize": 13,
+      "editor.tabSize": 2,
+      "editor.mouseWheelZoom": true,
+      "window.doubleClickIconToClose": true,
+      "update.mode": "manual",
+      "editor.experimentalGpuAcceleration": "on",
+      "editor.guides.bracketPairs": true,
+      "editor.guides.highlightActiveIndentation": false,
+      "editor.scrollbar.horizontal": "visible",
+      "editor.scrollbar.scrollByPage": true,
+      "editor.scrollbar.vertical": "visible",
+      "editor.fontLigatures": true,
+      "editor.fontFamily": "'Maple Mono NF CN', monospace",
+      "workbench.activityBar.location": "top",
+  
+      /*
+          terminal
+      */
+      "terminal.external.osxExec": "WezTerm.app",
+      "terminal.integrated.cursorBlinking": true,
+      "terminal.integrated.cursorStyle": "line",
+      "terminal.integrated.cursorStyleInactive": "none",
+      "terminal.integrated.cursorWidth": 2,
+      "terminal.integrated.fontLigatures.enabled": true,
+      "terminal.integrated.fontFamily": "'Maple Mono NF CN'",
+  
+      /*
+          Extension: vscode animations
+      */
+      "animations.Install-Method": "Custom UI Style",
+      "animations.CursorAnimation": true,
+      "animations.Focus-Dimming-Mode": "Everything But Editor",
+      "animations.Focus-Dimming-Amount": 75,
+      "animations.Tabs": "Slide",
+  
+      /*
+          Extension: background
+      */
+      "background.panel": {
+  
+          "images": [ "file:///Users/miksoyer/.config/vscode/panel/default.png" ],
+          "opacity": 0.1,
+          "size": "cover",
+          "position": "center",
+          "interval": 0,
+          "random": false
+      }, //end
+      "background.sidebar": {
+  
+          "images": [ "file:///Users/miksoyer/.config/vscode/sidebar/default.png" ],
+          "opacity": 0.1,
+          "size": "cover",
+          "position": "center",
+          "interval": 0,
+          "random": false
+      }, //end
+      
+  
+      /*
+          Extension: custom-ui
+      */
+      // "custom-ui-style.background.syncURL": "file:///Users/miksoyer/.config/wezterm/backdrops/background.jpeg",
+      "custom-ui-style.external.imports": [
+          "file:///Users/miksoyer/.vscode/extensions/brandonkirbyson.vscode-animations-2.0.7/dist/updateHandler.js"
+      ],
+      "custom-ui-style.external.loadStrategy": "cache",
+      "custom-ui-style.font.monospace": "Maple Mono NF CN",
+      "workbench.colorCustomizations": {
+        "dropdown.background": "#ffffff10",
+        "dropdown.border": "#ffffff30",
+        "editorWidget.background": "#1e1e1eed",
+        "quickInput.foreground": "#ffffffee",
+        "widget.shadow": "#00000055",
         "terminal.background": "#00000000"
     },
-    "window.titleBarStyle": "custom",
-    "vscode_vibrancy.opacity": 0.5,
-    "vscode_vibrancy.preferedDarkTheme": "Catppuccin Mocha",
-    "vscode_vibrancy.preferedLightTheme": "Paradise Frosted Glass",
-    "vscode_vibrancy.theme": "GitHub Dark Default",
-    "vscode_vibrancy.refreshInterval": 100,
-    "custom-ui-style.preferRestart": true,
-    "custom-ui-style.webview.monospaceSelector": [
-        "Maple Mono NF CN"
-    ],
-    "workbench.colorTheme": "Catppuccin Frappé",
+      "window.titleBarStyle": "custom",
+      "vscode_vibrancy.opacity": 0.5,
+      "vscode_vibrancy.preferedDarkTheme": "Catppuccin Mocha",
+      "vscode_vibrancy.preferedLightTheme": "Paradise Frosted Glass",
+      "vscode_vibrancy.theme": "Catppuccin Mocha",
+      "vscode_vibrancy.refreshInterval": 100,
+      "custom-ui-style.preferRestart": true,
+      "custom-ui-style.webview.monospaceSelector": [
+          "Maple Mono NF CN"
+      ],
+    "workbench.colorTheme": "Catppuccin Mocha",
+      "workbench.preferredDarkColorTheme": "Catppuccin Frappé",
+      "workbench.iconTheme": "catppuccin-mocha",
+      "catppuccin.accentColor": "blue",
+      "extensions.experimental.affinity": {
+          "asvetliakov.vscode-neovim": 1
+    },
     "terminal.integrated.gpuAcceleration": "off",
     "window.systemColorTheme": "dark",
-    "window.autoDetectColorScheme": true,
-    "workbench.preferredDarkColorTheme": "Catppuccin Frappé",
-    "workbench.iconTheme": "catppuccin-frappe",
-    "catppuccin.accentColor": "blue",
-    "extensions.experimental.affinity": {
-        "asvetliakov.vscode-neovim": 1
-    },
-    
-    
-    // 
-    
-   
-    
-}
+    "window.autoDetectColorScheme": false,
+      
+      
+      // 
+      
+     
+     } 

@@ -65,7 +65,7 @@
         }
         { 
           "if".app-id = "com.microsoft.VSCode";
-          run = [ "layout floating" "move-node-to-workspace V" ]; 
+          run = [ "move-node-to-workspace V" ]; 
         }
         { 
           "if".app-id = "com.tencent.xinWeChat";
@@ -85,8 +85,8 @@
         }
        	{
           "if".app-id = "com.apple.SFSymbols";
-	  run = [ "layout floating" ];
-	}
+	        run = [ "layout floating" ];
+	      }
 
 
         { 
