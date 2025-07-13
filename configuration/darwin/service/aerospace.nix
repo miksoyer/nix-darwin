@@ -87,7 +87,14 @@
           "if".app-id = "com.apple.SFSymbols";
 	        run = [ "layout floating" ];
 	      }
-
+        {
+          "if".app-id = "io.github.clash-verge-rev.clash-verge-rev";
+	        run = [ "layout floating" ];
+	      }
+        {
+          "if".app-id = "com.apple.Photos";
+	        run = [ "layout floating" ];
+	      }
 
         { 
           "if".app-id = "com.example.keyviz";

@@ -25,4 +25,5 @@ alias rebuild='sudo darwin-rebuild switch --impure --show-trace --flake /etc/nix
 # 更新nix-darwin配置并重建
 alias uprebuild='nix flake update --commit-lock-file --flake /etc/nix-darwin && rebuild'
 
+alias get-appid='sh $HOME/.config/mybin/get-appid.sh'
 
