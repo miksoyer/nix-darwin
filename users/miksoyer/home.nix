@@ -39,7 +39,7 @@ in
     pkgs.ollama
     # pkgs.qemu
 
-    
+    pkgs.sketchybar-app-font
     # pkgs.istat-menus # $96
   ];
 

@@ -2,6 +2,7 @@
 {
     system.defaults = {
 
+
       # Don't automatically install Mac OS software updates.
       SoftwareUpdate.AutomaticallyInstallMacOSUpdates = false;
 
@@ -19,6 +20,9 @@
       };
 
       NSGlobalDomain = {
+        # hide menu bar
+        _HIHideMenuBar = true;
+
         # sound 
         "com.apple.sound.beep.feedback" = 1;                  # Make a feedback sound when the system volume changed. 0 or 1 ,default = 1
         "com.apple.sound.beep.volume" = 1.000;
