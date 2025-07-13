@@ -16,35 +16,13 @@ in
 
 
   home.packages = [
-    # language server
-    # pkgs.superhtml
-    # pkgs.vscode-langservers-extracted
-    # pkgs.ansible-language-server
-    # pkgs.yaml-language-server
-    # pkgs.pyright
-    # pkgs.pkgs.python313Packages.python-lsp-server
-    # pkgs.python313Packages.jedi-language-server
-    # pkgs.ruff
-    # pkgs.nixfmt-rfc-style
-    # pkgs.golangci-lint-langserver
-    # pkgs.gopls
-    # pkgs.gotools
-    # pkgs.mkalias
-    # pkgs.stylua
-    # pkgs.shfmt
-    # pkgs.nil
-    # pkgs.biome
-    # pkgs.dockerfile-language-server-nodejs
-    # pkgs.docker-compose-language-service
-    # pkgs.lua-language-server
-    # pkgs.typescript
-    # pkgs.typescript-language-server
-    # # pkgs.tailwindcss-language-server
-    # pkgs.taplo
+    pkgs.nixfmt-rfc-style
+ 
+    pkgs.nil
+
 
     # code
     pkgs.rustup
-    pkgs.go
     pkgs.lua
 
     # dev tools

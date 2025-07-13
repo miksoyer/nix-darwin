@@ -9,7 +9,6 @@
       pkgs.google-chrome
       pkgs.iina
       pkgs.chatgpt
-      pkgs.flameshot
       
 
 
@@ -33,7 +32,6 @@
       pkgs.eza
       pkgs.tlrc
       pkgs.jq
-      pkgs.yq-go
       pkgs.wget
       pkgs.curl
       pkgs.blueutil
