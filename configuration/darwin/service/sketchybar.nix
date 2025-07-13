@@ -1,5 +1,6 @@
 { pkgs, ... }:
 {
+  system.defaults.NSGlobalDomain._HIHideMenuBar = true;
   environment.systemPackages = [
     #pkgs.sketchybar
     pkgs.sketchybar-app-font
