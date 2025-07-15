@@ -16,6 +16,7 @@
       pkgs.gawk
       pkgs.mawk
       pkgs.neovim
+      pkgs.lua
       pkgs.helix
       pkgs.fastfetch
       pkgs.starship

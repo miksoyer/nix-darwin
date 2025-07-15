@@ -23,7 +23,6 @@ in
 
     # code
     pkgs.rustup
-    pkgs.lua
 
     # dev tools
     pkgs.postman
