@@ -8,6 +8,8 @@
       # "sketchybar"
       # "borders"
       # "font-sf-pro"
+      "node"
+      "baidunetdisk"
     ];
     taps = [
       #"FelixKratz/formulae" #sketchybar borders

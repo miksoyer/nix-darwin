@@ -13,6 +13,7 @@
 
 
       # CLI tools
+      #pkgs.nodejs_24
       pkgs.gawk
       pkgs.mawk
       pkgs.neovim
