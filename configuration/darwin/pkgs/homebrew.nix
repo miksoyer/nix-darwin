@@ -9,7 +9,6 @@
       # "borders"
       # "font-sf-pro"
       "node"
-      "baidunetdisk"
     ];
     taps = [
       #"FelixKratz/formulae" #sketchybar borders
@@ -29,6 +28,7 @@
     ];
     masApps = {
       # "Amphetamine" = 937984704;
+     # "State" = 1472818562;
     };
 
     # List of Docker images to install using whalebrew.
