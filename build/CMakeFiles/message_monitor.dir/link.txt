@@ -1,0 +1,1 @@
+/usr/bin/c++ -g -arch arm64 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX15.5.sdk -Wl,-search_paths_first -Wl,-headerpad_max_install_names -L/opt/homebrew/opt/llvm/lib CMakeFiles/message_monitor.dir/app_status.cpp.o CMakeFiles/message_monitor.dir/main.cpp.o -o message_monitor

@@ -79,8 +79,11 @@ source "$ITEMS_DIR/status.sh"
 #source "$ITEMS_DIR/spotify.sh"
 
 source "$ITEMS_DIR/message.sh"
-
-
+killall messager_monitor
+(cd $CONFIG_DIR/bin/message_monitor && \
+ cmake -Bbuild -DCMAKE_BUILD_TYPE=Release && \
+ cmake --build build --target message_monitor)
+$CONFIG_DIR/bin/message_monitor/message_monitor WeChat QQ > /dev/null 2>&1 &
 
 
 # 

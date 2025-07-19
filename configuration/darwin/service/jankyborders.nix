@@ -16,7 +16,7 @@
     order = "above";      # Specifies whether borders should be drawn above or below windows.
     style = "round";      # Specifies the style of the border (either round or square).
     blur_radius = 5.0;    # blur radius applied to the borders or backgrounds with transparency.
-    width = 2.0;          # Determines the width of the border
+    width = 1.5;          # Determines the width of the border
     hidpi = true;           # If set to on, the border will be drawn with retina resolution.
 
     # If set to true, the (slower) accessibility API is used to resolve the focused window.
@@ -26,8 +26,16 @@
     #  If you prefer using background images in terminal emulators, you may consider opening it
     # background_color = "0xffc4b5fd";
 
-    blacklist = [
-      "iPhone Mirroring"
+    # blacklist = [
+    #   "iPhone Mirroring"
+    #   "WeChat"
+    #   "QQ"
+    #   "ChatGPT"
+    # ];
+    whitelist = [
+      "Google Chrome"
+      "Electron" #"Visual Studio Code"
+      "wezterm-gui"
     ];
   };
 }

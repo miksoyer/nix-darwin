@@ -9,8 +9,10 @@
       pkgs.google-chrome
       pkgs.iina
       pkgs.chatgpt
+      pkgs.alt-tab-macos
       
-
+      pkgs.cmake
+      
 
       # CLI tools
       #pkgs.nodejs_24

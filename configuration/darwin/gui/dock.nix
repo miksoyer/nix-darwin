@@ -17,23 +17,23 @@
       "/Users/miksoyer/Applications/Home Manager Apps/Clion.app"
 
     ];
-    orientation = "bottom";                               # "left", "right", "bottom"
+    orientation = "left";                               # "left", "right", "bottom"
     static-only = false;                                   # Show apps only open
 
     enable-spring-load-actions-on-all-items = true;       # Enable spring loading for all Dock items
     appswitcher-all-displays = true;                      # show dock in every montors
-    autohide = true;
+    autohide = false;
     autohide-delay = 0.06;                                # Sets the speed of the autohide delay(0.24)
     autohide-time-modifier = 2.0;                         # Sets the speed of the animation when hiding/showing the Dock.(1.0)
     expose-animation-duration = 1.0;
-    largesize = 80;                                       # Magnified icon size on hover. The default is 16.[16,128]
-    tilesize = 52;
+    largesize = 72;                                       # Magnified icon size on hover. The default is 16.[16,128]
+    tilesize = 42;
     magnification = true;                                 # Magnify icon on hover
     mineffect = "genie";                                   # one of (default)“genie”, “suck”, “scale”
     minimize-to-application = true;                       # open it, open it, open it!
     mouse-over-hilite-stack = true;
     scroll-to-open = true;                                # Scroll up on a Dock icon to show all Space’s opened windows for an app, or open stack
-    show-recents = true;
+    show-recents = false;
     show-process-indicators = true;                       # Show indicator lights for open applications in the Dock
     
 

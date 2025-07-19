@@ -107,12 +107,12 @@
       ];
 
       gaps = {
-        inner.horizontal = 15;
-        inner.vertical = 10;
-        outer.left = 10;
-        outer.bottom = 10;
-        outer.top = 12;
-        outer.right = 12;
+        inner.horizontal = 6;
+        inner.vertical = 6;
+        outer.left = 5;
+        outer.bottom = 5;
+        outer.top = 8;
+        outer.right = 8;
       };
       
       key-mapping.preset = "qwerty";        # Keymapping preset. Type: one of “qwerty”, “dvorak”
@@ -158,7 +158,6 @@
           ''exec-and-forget osascript -e "tell application 'QQ' to activate"''
         ];
 
-        alt-tab = "workspace-back-and-forth";
         # See: https://nikitabobko.github.io/AeroSpace/commands#move-workspace-to-monitors
         alt-shift-tab = "move-workspace-to-monitor --wrap-around next";
         alt-f = "layout floating tiling";
@@ -172,6 +171,8 @@
         m = [ "fullscreen" "mode main" ];
         backspace = [ "close-all-windows-but-current" "mode main" ];
 
+        alt-shift-tab = "move-workspace-to-monitor --wrap-around next";
+        
         alt-shift-h = [ "join-with left" "mode main" ];
         alt-shift-j = [ "join-with down" "mode main" ];
         alt-shift-k = [ "join-with up" "mode main" ];

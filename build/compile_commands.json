@@ -1,0 +1,14 @@
+[
+{
+  "directory": "/private/etc/nix-darwin/build",
+  "command": "/usr/bin/c++   -g -std=gnu++2b -arch arm64 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX15.5.sdk -Wall -Wextra -Wpedantic -o CMakeFiles/message_monitor.dir/app_status.cpp.o -c /private/etc/nix-darwin/users/miksoyer/.config/sketchybar/bin/message_monitor/app_status.cpp",
+  "file": "/private/etc/nix-darwin/users/miksoyer/.config/sketchybar/bin/message_monitor/app_status.cpp",
+  "output": "CMakeFiles/message_monitor.dir/app_status.cpp.o"
+},
+{
+  "directory": "/private/etc/nix-darwin/build",
+  "command": "/usr/bin/c++   -g -std=gnu++2b -arch arm64 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX15.5.sdk -Wall -Wextra -Wpedantic -o CMakeFiles/message_monitor.dir/main.cpp.o -c /private/etc/nix-darwin/users/miksoyer/.config/sketchybar/bin/message_monitor/main.cpp",
+  "file": "/private/etc/nix-darwin/users/miksoyer/.config/sketchybar/bin/message_monitor/main.cpp",
+  "output": "CMakeFiles/message_monitor.dir/main.cpp.o"
+}
+]

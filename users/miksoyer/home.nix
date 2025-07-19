@@ -44,6 +44,7 @@ in
 
   home.file = {
     ".zshrc".source = "/etc/nix-darwin/users/${myname}/.zshrc";
+    ".config/mybin" = { source = "/etc/nix-darwin/users/${myname}/.config/mybin"; recursive = true; };
     ".config/fastfetch" = { source = "/etc/nix-darwin/users/${myname}/.config/fastfetch"; recursive = true; };
     ".config/bat" = { source = "/etc/nix-darwin/users/${myname}/.config/bat/"; recursive = true; };
     ".config/eza" = { source = "/etc/nix-darwin/users/${myname}/.config/eza/"; recursive = true;};
