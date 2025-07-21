@@ -7,21 +7,19 @@ if [ "$DEVICES" = "" ]; then
 else
   sketchybar -m --set $NAME  drawing=on
   sketchybar -m --set volume_icon drawing=off 
+
+  icon="􀪷"
+  
   left="$(echo $DEVICES | jq -r .device_batteryLevelLeft)"
+  [ "$left" == "null" ] && left="" && icon="􀲍"
+  
   right="$(echo $DEVICES | jq -r .device_batteryLevelRight)"
+  [ "$right" == "null" ] && right="" && icon="􀲎"
+  
   case="$(echo $DEVICES | jq -r .device_batteryLevelCase)"
+  [ "$case" == "null" ] && case="" || case="􀹬$case"
   
-  if [[ "$left" == "null"  ]]; then
-    left="0"
-  fi
+  label="->$left $right $case" 
   
-  if [[ "$right" == "null" ]]; then
-    right='0'
-  fi
-  
-  if [[ "$case" == "null" ]]; then
-    case=""
-  fi
-  
-  sketchybar -m --set $NAME label="L:$left R:$right"
+  sketchybar -m --set $NAME icon="$icon" label="$label" 
 fi
