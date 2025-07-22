@@ -19,6 +19,7 @@ in
     pkgs.nixfmt-rfc-style
  
     pkgs.nil
+    pkgs.lua
 
 
     # code
@@ -55,6 +56,7 @@ in
     ".config/yazi" = { source = "/etc/nix-darwin/users/${myname}/.config/yazi/"; recursive = true; };
     ".config/helix" = { source = "/etc/nix-darwin/users/${myname}/.config/helix/"; recursive = true; };
     ".config/sketchybar" = { source = "/etc/nix-darwin/users/${myname}/.config/sketchybar/"; recursive = true; };
+    ".config/nvim" = { source = "/etc/nix-darwin/users/${myname}/.config/nvim/"; recursive = true; };
   };
 
   # Let Home Manager install and manage itself.
