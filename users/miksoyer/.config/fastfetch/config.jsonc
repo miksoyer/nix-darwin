@@ -3,7 +3,7 @@
   "logo": {
     "type": "sixel",        // Logo type: auto, builtin, small, file, etc.
     "source": "/etc/nix-darwin/users/miksoyer/.config/fastfetch/logo.gif",      // Built-in logo name or file path
-    "width": 65,           // Width in characters (for image logos)
+    "width": 35,           // Width in characters (for image logos)
     "height": 35,          // Height in characters (for image logos)
     "padding": {
         "top": 0,          // Top padding

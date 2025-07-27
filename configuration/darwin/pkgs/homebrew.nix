@@ -26,6 +26,7 @@
       "sf-symbols"
       "visual-studio-code"
       "hammerspoon"
+      "dockdoor"
     ];
     masApps = {
       # "Amphetamine" = 937984704;

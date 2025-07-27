@@ -9,7 +9,7 @@
       pkgs.google-chrome
       pkgs.iina
       pkgs.chatgpt
-      pkgs.alt-tab-macos
+      # pkgs.alt-tab-macos  # brew->dockdoor
       
       pkgs.cmake
       
@@ -21,8 +21,9 @@
       pkgs.neovim
       pkgs.neovide
       pkgs.helix
-      pkgs.fastfetch
+      pkgs.chafa
       pkgs.imagemagick
+      pkgs.fastfetch
       pkgs.starship
       pkgs.yazi
       pkgs.git
