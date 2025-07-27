@@ -13,7 +13,7 @@ return {
     -- 基本配置
     require("nvim-treesitter.configs").setup({
       ensure_installed = {
-        "lua", "vim", "vimdoc", "bash",
+        "lua", "vim", "vimdoc", "bash", "nix",
         "python", "javascript", "typescript", "html", "css", "json", "yaml",
         "cpp", "c", "go", "rust", "markdown", "markdown_inline",
       },

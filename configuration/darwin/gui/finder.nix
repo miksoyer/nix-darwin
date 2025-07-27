@@ -9,7 +9,7 @@
     CreateDesktop = true;                   # Whether to show icons on the desktop or not. The default is true.
     FXDefaultSearchScope = "SCcf";          # Change the default search scope. “SCcf” = current folder. unset (“This Mac”).
     FXEnableExtensionChangeWarning = false; # Whether to show warnings when change the file extension of files
-    FXPreferredViewStyle = "Nlsv";          # “icnv” = Icon view, “Nlsv” = List view, “clmv” = Column View, “Flwv” = Gallery View
+    FXPreferredViewStyle = "Clmv";          # “icnv” = Icon view, “Nlsv” = List view, “clmv” = Column View, “Flwv” = Gallery View
     FXRemoveOldTrashItems = true;           # Remove items in the trash after 30 days
     NewWindowTarget = "Home";               # “Computer”, “OS volume”, “Home”, “Desktop”, “Documents”, “Recents”, “iCloud Drive”, “Other”
     QuitMenuItem = true;                    # to allow quitting of the Finder

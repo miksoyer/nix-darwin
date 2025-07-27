@@ -25,10 +25,12 @@
       "font-sf-pro"
       "sf-symbols"
       "visual-studio-code"
+      "hammerspoon"
     ];
     masApps = {
       # "Amphetamine" = 937984704;
      # "State" = 1472818562;
+     "我的壁纸" = 1552826194;
     };
 
     # List of Docker images to install using whalebrew.

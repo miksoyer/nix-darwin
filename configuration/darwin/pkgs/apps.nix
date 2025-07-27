@@ -22,6 +22,7 @@
       pkgs.neovide
       pkgs.helix
       pkgs.fastfetch
+      pkgs.imagemagick
       pkgs.starship
       pkgs.yazi
       pkgs.git
@@ -38,6 +39,7 @@
       pkgs.jq
       pkgs.wget
       pkgs.curl
+      pkgs.bottom
       pkgs.blueutil
       pkgs.ffmpeg
       pkgs.poppler
