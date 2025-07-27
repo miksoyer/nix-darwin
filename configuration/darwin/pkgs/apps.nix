@@ -10,7 +10,6 @@
       pkgs.iina
       pkgs.chatgpt
       # pkgs.alt-tab-macos  # brew->dockdoor
-      
       pkgs.cmake
       
 
@@ -44,6 +43,7 @@
       pkgs.blueutil
       pkgs.ffmpeg
       pkgs.poppler
+      pkgs.keycastr   # show pressed key
       # nix
       pkgs.devenv
       pkgs.direnv

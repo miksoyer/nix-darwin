@@ -15,7 +15,7 @@
     
     order = "above";      # Specifies whether borders should be drawn above or below windows.
     style = "round";      # Specifies the style of the border (either round or square).
-    blur_radius = 8.0;    # blur radius applied to the borders or backgrounds with transparency.
+    blur_radius = 12.0;    # blur radius applied to the borders or backgrounds with transparency.
     width = 1.5;          # Determines the width of the border
     hidpi = true;           # If set to on, the border will be drawn with retina resolution.
 

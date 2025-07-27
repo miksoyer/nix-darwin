@@ -43,8 +43,8 @@ return {
    window_decorations = "INTEGRATED_BUTTONS|RESIZE",
    integrated_title_button_alignment = "Right",
    integrated_title_button_color = "Auto",
-   initial_rows = 52,
-   initial_cols = 152,
+   initial_rows = 48,
+   initial_cols = 148,
    window_padding = {
       left = 16,
       right = 16,
