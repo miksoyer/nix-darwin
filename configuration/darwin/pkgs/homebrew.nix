@@ -44,7 +44,7 @@
       
       # dev tools
       "clion"
-      "rust-rover"
+      "rustrover"
       "goland"
       "webstorm"
     ];

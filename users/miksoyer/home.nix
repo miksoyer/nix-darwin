@@ -23,6 +23,7 @@ in
     # code
     pkgs.rustup
     pkgs.cmake
+    pkgs.ninja
 
 
 

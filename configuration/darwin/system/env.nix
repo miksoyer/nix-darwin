@@ -6,8 +6,7 @@
       EDITOR = "nvim visudo";
       VISUAL = "nvim visudo";
       SUDO_EDITOR = "nvim";
-      GOPATH="$HOME/.local/go/workspace";
-      GOBIN="$HOME/.local/go/bin";
+      GOPATH="$HOME/Work/t-Go";
       HELLO = "hello~ world hhh";
       WORLD = "world~ hello 233";
     };
