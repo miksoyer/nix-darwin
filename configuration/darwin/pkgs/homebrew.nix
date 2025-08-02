@@ -18,15 +18,35 @@
     # always upgrade casks listed in homebrew.casks regardless of whether it’s unversioned or it updates itself.
     # greedyCasks = true;
     casks = [
-      "qqlive"
-      "qqmusic"
-      "raycast"
-      "tencent-meeting"
+      # system software
+      "wezterm"
+      "obsidian"
+      "visual-studio-code"
+      "google-chrome"
+      "iina"
+      "chatgpt"
+      "squirrel"
+      "dockdoor"
+      "keycastr"
       "font-sf-pro"
       "sf-symbols"
-      "visual-studio-code"
-      "hammerspoon"
-      "dockdoor"
+      # "hammerspoon"
+
+      # personal software
+      "qq"
+      "wechat"
+      "discord"
+      "qqlive"
+      "qqmusic"
+      "lx-music"
+      "raycast"
+      "tencent-meeting"
+      
+      # dev tools
+      "clion"
+      "rust-rover"
+      "goland"
+      "webstorm"
     ];
     masApps = {
       # "Amphetamine" = 937984704;

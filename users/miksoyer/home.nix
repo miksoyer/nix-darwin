@@ -17,30 +17,17 @@ in
 
   home.packages = [
     pkgs.nixfmt-rfc-style
- 
     pkgs.nil
     pkgs.lua
 
-
     # code
     pkgs.rustup
+    pkgs.cmake
 
-    # dev tools
-    pkgs.postman
-    pkgs.jetbrains.clion
-    pkgs.jetbrains.rust-rover
-    pkgs.jetbrains.webstorm
-    pkgs.jetbrains.goland
+
 
     # other pkgs
-    pkgs.qq
-    pkgs.wechat
-    pkgs.discord
     pkgs.ollama
-    # pkgs.qemu
-
-    pkgs.sketchybar-app-font
-    # pkgs.istat-menus # $96
   ];
 
   home.file = {
@@ -57,7 +44,7 @@ in
     ".config/helix" = { source = "/etc/nix-darwin/users/${myname}/.config/helix/"; recursive = true; };
     ".config/sketchybar" = { source = "/etc/nix-darwin/users/${myname}/.config/sketchybar/"; recursive = true; };
     ".config/nvim" = { source = "/etc/nix-darwin/users/${myname}/.config/nvim/"; recursive = true; };
-    ".hammerspoon" = { source = "/etc/nix-darwin/users/${myname}/.hammerspoon/"; recursive = true; };
+    # ".hammerspoon" = { source = "/etc/nix-darwin/users/${myname}/.hammerspoon/"; recursive = true; };
   };
 
   # Let Home Manager install and manage itself.

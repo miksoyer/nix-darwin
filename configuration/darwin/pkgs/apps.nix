@@ -3,18 +3,16 @@
   environment = {
     systemPackages = [
       # GUI software
-      pkgs.wezterm
-      pkgs.obsidian
-      #pkgs.vscode # /nix/store is readonly, install in brew
-      pkgs.google-chrome
-      pkgs.iina
-      pkgs.chatgpt
+      # pkgs.wezterm
+      # pkgs.obsidian
+      # pkgs.vscode       # /nix/store is readonly, install in brew
+      # pkgs.google-chrome
+      # pkgs.iina
+      # pkgs.chatgpt
       # pkgs.alt-tab-macos  # brew->dockdoor
-      pkgs.cmake
       
 
       # CLI tools
-      #pkgs.nodejs_24
       pkgs.gawk
       pkgs.mawk
       pkgs.neovim
@@ -43,12 +41,11 @@
       pkgs.blueutil
       pkgs.ffmpeg
       pkgs.poppler
-      pkgs.keycastr   # show pressed key
+
       # nix
       pkgs.devenv
       pkgs.direnv
-
-
+      
       # stable
       #nixpkgs_stable.legacyPackages.${structure}.ghostty
     ];

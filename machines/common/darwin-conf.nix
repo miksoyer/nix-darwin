@@ -86,16 +86,16 @@ in
     bash.completion.enable = true;
     zsh = {
       enable = true;
-      enableAutosuggestions = true;
-      enableCompletion = true;
-      enableFastSyntaxHighlighting = true;
-      enableFzfCompletion = true;
-      enableFzfGit = true;
-      enableFzfHistory = true;
-      enableGlobalCompInit = true;
-      variables = {
-          # like export xxx = xxx;
-      };
+      # enableAutosuggestions = true;
+      # enableCompletion = true;
+      # enableFastSyntaxHighlighting = true;
+      # enableFzfCompletion = true;
+      # enableFzfGit = true;
+      # enableFzfHistory = true;
+      # enableGlobalCompInit = true;
+      # variables = {
+      #     # like export xxx = xxx;
+      # };
     };
 
     # Enable nix-index and its command-not-found helper.

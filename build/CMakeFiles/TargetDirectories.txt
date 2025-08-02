@@ -1,3 +1,0 @@
-/private/etc/nix-darwin/build/CMakeFiles/message_monitor.dir
-/private/etc/nix-darwin/build/CMakeFiles/edit_cache.dir
-/private/etc/nix-darwin/build/CMakeFiles/rebuild_cache.dir

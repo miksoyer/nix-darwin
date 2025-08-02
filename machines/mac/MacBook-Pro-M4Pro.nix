@@ -34,10 +34,10 @@
       {
         # set up for touch ID
         security.pam.services.sudo_local = {
-        # This fixes Touch ID for sudo not working inside tmux and screen.
-        reattach = true;
-        # Whether to enable Touch ID with sudo.
-        touchIdAuth = true;
+          # This fixes Touch ID for sudo not working inside tmux and screen.
+          reattach = true;
+          # Whether to enable Touch ID with sudo.
+          touchIdAuth = true;
         };
         # Text to be shown on the login window. Default is “\\U03bb”.
         system.defaults.loginwindow.LoginwindowText = "Hello nixer~ 😭👌";

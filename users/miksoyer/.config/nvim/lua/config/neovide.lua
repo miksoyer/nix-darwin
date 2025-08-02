@@ -11,7 +11,7 @@ vim.o.guifont = "Maple Mono NF CN:h14"
 vim.g.neovide_scale_factor = 1.0
 
 -- 半透明效果（0~1）
-vim.g.neovide_transparency = 0.9
+vim.g.neovide_opacity = 0.9
 
 -- 毛玻璃模糊（配合透明使用）
 vim.g.neovide_floating_blur_amount_x = 2.0
