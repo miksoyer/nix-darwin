@@ -6,6 +6,7 @@ in
   nixpkgs = {
     # to install the unfree pkgs
     config.allowUnfree = true;
+    config.allowBroken = true;
     # The platform the configuration will be used on.
     hostPlatform = "${structure}"; 
   };

@@ -9,6 +9,9 @@
       # "borders"
       # "font-sf-pro"
       "node"
+      "llvm"
+      "lld"
+      "mold"
     ];
     taps = [
       #"FelixKratz/formulae" #sketchybar borders
@@ -25,12 +28,14 @@
       "google-chrome"
       "iina"
       "chatgpt"
-      "squirrel"
       "dockdoor"
       "keycastr"
       "font-sf-pro"
       "sf-symbols"
+      "parallels"
+      "mumuplayer"
       # "hammerspoon"
+
 
       # personal software
       "qq"

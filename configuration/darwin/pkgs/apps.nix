@@ -47,7 +47,7 @@
       pkgs.direnv
       
       # stable
-      #nixpkgs_stable.legacyPackages.${structure}.ghostty
+      #nixpkgs_stable.legacyPackages.${structure}.llvmPackages_20.libc
     ];
 
   };

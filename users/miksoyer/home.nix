@@ -24,11 +24,30 @@ in
     pkgs.rustup
     pkgs.cmake
     pkgs.ninja
+    #pkgs.mold
+    # pkgs.llvmPackages_20.libllvm
+    # pkgs.llvmPackages_20.libunwind
+    # pkgs.llvmPackages_20.libcxxStdenv
+    # pkgs.llvmPackages_20.libcxx
+    # #pkgs.llvmPackages_20.libc
+    # pkgs.llvmPackages_20.compiler-rt
+
+
+    # pkgs.llvmPackages_20.clangUseLLVM
+    # pkgs.llvmPackages_20.clang-tools
+    # # pkgs.llvmPackages_20.bintools
+
+
+
+    # pkgs.llvmPackages_20.llvm-manpages
+    # pkgs.llvmPackages_20.clang-manpages
+
 
 
 
     # other pkgs
     pkgs.ollama
+    pkgs.sketchybar-app-font
   ];
 
   home.file = {

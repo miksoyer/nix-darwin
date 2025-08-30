@@ -1,1 +1,1 @@
-/etc/profiles/per-user/miksoyer/bin/icon_map.sh
+/run/current-system/sw/bin/icon_map.sh

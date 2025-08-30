@@ -10,7 +10,8 @@ source "${ZINIT_HOME}/zinit.zsh"
 # 插件下载
 zinit light zsh-users/zsh-completions
 autoload -U compinit; compinit
-# zinit light Aloxaf/fzf-tab
+zinit light Aloxaf/fzf-tab
+source $HOME/.config/zsh/fzf-tab.zsh || echo "oh my god, there is an error [file not exist] -> zsh/fzf-tab.zsh"
 zinit light zsh-users/zsh-syntax-highlighting
 zinit light zsh-users/zsh-completions
 zinit light zsh-users/zsh-autosuggestions

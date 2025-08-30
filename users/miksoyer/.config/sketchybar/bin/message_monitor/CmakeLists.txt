@@ -8,7 +8,7 @@ set(CMAKE_CXX_STANDARD_REQUIRED ON)
 
 # 打开警告
 add_compile_options(-Wall -Wextra -Wpedantic)
-
+set(CMAKE_EXPORT_COMPILE_COMMANDS ON)
 # 可执行程序放在当前目录下
 set(CMAKE_RUNTIME_OUTPUT_DIRECTORY ${CMAKE_SOURCE_DIR})
 

@@ -55,13 +55,13 @@
         }
 
 
-        { 
-          "if".app-id = "com.google.Chrome";
-          run = [ "move-node-to-workspace 2" ]; 
-        }
+        # { 
+        #   "if".app-id = "com.google.Chrome";
+        #   run = [ "move-node-to-workspace 2" ]; 
+        # }
         { 
           "if".app-id = "com.github.wez.wezterm";
-          run = [ "layout floating" "move-node-to-workspace T" ]; 
+          run = [ "layout floating" ]; 
         }
         { 
           "if".app-id = "com.microsoft.VSCode";
@@ -69,19 +69,19 @@
         }
         { 
           "if".app-id = "com.tencent.xinWeChat";
-          run = [ "layout floating" "move-node-to-workspace E" ]; 
+          run = [ "layout floating" ]; 
         }
         { 
           "if".app-id = "com.tencent.qq";
-          run = [ "layout floating" "move-node-to-workspace E" ]; 
+          run = [ "layout floating" ]; 
         }
         { 
           "if".app-id = "com.hnc.Discord";
-          run = [ "layout floating" "move-node-to-workspace E" ]; 
+          run = [ "layout floating" ]; 
         }
         { 
           "if".app-id = "com.openai.chat";
-          run = [ "move-node-to-workspace E" ]; 
+          run = [ "layout floating" ]; 
         }
        	{
           "if".app-id = "com.apple.SFSymbols";
@@ -100,6 +100,12 @@
           "if".app-id = "com.example.keyviz";
           run = [ "layout floating" ]; 
         }
+        { 
+          "if".app-id = "com.tencent.tenvideo";
+          run = [ "layout floating" ]; 
+        }
+
+        
         { 
           "if".app-id = "NULL-APP-BUNDLE-ID";
           run = [ "layout floating" ]; 
